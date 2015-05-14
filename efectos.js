@@ -7,7 +7,7 @@ $(function(){
 
 	// $('#cambiarfondo').hover(
 	// 	function(){
-	// 		$('#cambiarfondo').animate({opacity: 0.6}, 1000);		
+	// 		$('#cambiarfondo').animate({opacity: 1}, 1000);		
 	// 	},
 	// 	function(){
 	// 		$('#cambiarfondo').animate({opacity: 0}, 1000);
