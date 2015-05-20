@@ -27,7 +27,7 @@ section#bloque1{
 	background-color:#8FE5E5;
 	background-image:url(fondo_tres.png);	
 	background-size:380px 380px;
-	min-height:1120px;
+	min-height:1220px;
 }
 
 h1{
@@ -58,8 +58,9 @@ h1{
 div#estudiantes{
 	display:flex;
 	justify-content:center;
+	min-height:300px;
+	
 }
-
 
 /*#cambiarfondo,*/#estudiantes img {
 	padding: 15px;
@@ -71,9 +72,12 @@ div#estudiantes{
 	box-shadow: 5px 5px 10px #999;
 	width: 200px;
 	height: 200px;
+
 }
 
-
+.estudiante{
+	min-width:232px;
+}
 	/*div#cambiarfondo{
 		position:absolute;
 		opacity:0;
@@ -91,6 +95,7 @@ h2.titulo{
 	font-size:35px;
 	font-family:'Oswald', sans-serif;
 	margin: 0 auto 12px auto;
+	text-align:center;
 }
 
 .nombres p{
@@ -102,24 +107,23 @@ h2.titulo{
 	text-align:center;		
 }
 
-h2#t_student{
-	text-align: center;
-}
-
-
-.row,#project {
+.center{
 	display:flex;
 	justify-content:space-around;
-}
-
-.row .titulo {
-	text-align: center;
-}
 		
-div#center{ 
-	display:flex;
-
 }
+
+.half-block{
+	min-width: 460px;
+	min-height: 329px;
+}
+
+.block{
+	min-width: 181px;
+}
+
+
+
 .logos img{
 	padding: 15px;
 	width: 130px;
@@ -136,6 +140,7 @@ div#center{
 div#coachcompany{
 	text-align:center;
 	min-height: 90px
+	display:flex;	
 }
 
 section#bloque3{
