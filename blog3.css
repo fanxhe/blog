@@ -110,7 +110,7 @@ h2.titulo{
 .center{
 	display:flex;
 	justify-content:space-around;
-		
+	flex-wrap:wrap;		
 }
 
 .half-block{
