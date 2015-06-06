@@ -6,18 +6,18 @@ html, body {
 }
 
 div#header{
-	background: url(col.jpg) no-repeat fixed bottom center;
+	background: url(header.jpg) no-repeat fixed bottom center;
     background-size:cover;
 	width:100%;
-	height:350px;
+	height:370px;
 	display:block;	
 }
 
 div#colima{
-	background:url(coli.jpg) no-repeat fixed bottom center;
+	background:url(hdr.jpg) no-repeat fixed bottom center;
     background-size:cover;
 	width:100%;
-	height:350px;
+	height:370px;
 	opacity:0;
 	display:block;
 	position:absolute;
@@ -27,7 +27,7 @@ section#bloque1{
 	background-color:#8FE5E5;
 	background-image:url(fondo_tres.png);	
 	background-size:380px 380px;
-	min-height:1220px;
+	min-height:1540px;
 }
 
 h1{
@@ -54,6 +54,21 @@ h1{
 	 	font-size: 100px; 
 	 	color:#46A1B6;
 	}
+
+h2#description{
+	margin-bottom:120px;
+	font-size:25px;
+	
+} 
+
+span.mayor{
+	font-size: 30px;
+}
+
+#description p{
+	text-shadow: 20px -1px 20px #46A1B6;
+
+}
 
 div#estudiantes{
 	display:flex;
@@ -139,8 +154,12 @@ h2.titulo{
 
 div#coachcompany{
 	text-align:center;
-	min-height: 90px
-	display:flex;	
+	min-height: 90px;
+	display:flex;
+	justify-content:center;
+}
+.block-crowd{
+	min-width: 306px;
 }
 
 section#bloque3{
@@ -152,7 +171,7 @@ nav#contenido ul {
 	top:-40px;
 	margin: 0 auto;
 	display:block;
-	width: 285px;
+	width: 372px;
 }
 	
 ul,li{
@@ -176,6 +195,7 @@ ul,li{
      box-shadow:2px 2px 5px #999;
      position:relative;         
      top:-5px;
+     color:#46A1B6;
 }
 
 @font-face {
