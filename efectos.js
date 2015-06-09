@@ -5,13 +5,13 @@ $(function(){
 		$('#colima').css('opacity',opacidad);
 	});
 
-	// $('#cambiarfondo').hover(
-	// 	function(){
-	// 		$('#cambiarfondo').animate({opacity: 1}, 1000);		
-	// 	},
-	// 	function(){
-	// 		$('#cambiarfondo').animate({opacity: 0}, 1000);
-	// });
+	$('#cambiarfondo').hover(
+		function(){
+			$('#cambiarfondo').animate({opacity: 0.7}, 1000);		
+		},
+		function(){
+			$('#cambiarfondo').animate({opacity: 0}, 1000);
+	});
 
 });
 
