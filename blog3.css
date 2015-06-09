@@ -70,6 +70,23 @@ span.mayor{
 
 }
 
+div.about_me{
+	border:solid 2px;
+	border-radius:20%;
+	display:flex;
+	border-color:white;
+	width: 400px;
+	background-color: hsla(170, 30%, 40%, 0.6);
+}
+
+#Anye{
+	margin: 0 auto 12px auto;
+}
+
+#Steffy{
+	margin: 0 auto 12px auto;
+}
+
 div#estudiantes{
 	display:flex;
 	justify-content:center;
@@ -93,17 +110,14 @@ div#estudiantes{
 .estudiante{
 	min-width:192px;
 }
-	/*div#cambiarfondo{
-		position:absolute;
-		opacity:0;
-		background-size: 380px 380px;
-		background-image: url(fondo_tres.png);
-		background-color:#8FE5E5;
-		box-shadow: 5px 5px 10px #999;
-		width: 190px;
-	 	height: 190px;
-	 	background-color:#0D1B1B;
-	}*/
+div#cambiarfondo{
+	min-width:232px;
+	border-radius:50%;
+	position:absolute;
+	opacity:0;
+	background-color:#8FE5E5;
+	 	
+	}
 h2.titulo{
 	color:white;
 	text-shadow: -1px -1px 15px black;
