@@ -67,57 +67,71 @@ span.mayor{
 
 #description p{
 	text-shadow: 20px -1px 20px #46A1B6;
-
 }
 
-div.about_me{
-	border:solid 2px;
-	border-radius:20%;
-	display:flex;
-	border-color:white;
-	width: 400px;
-	background-color: hsla(170, 30%, 40%, 0.6);
+div.circle_about_me{
+	opacity: 0;
+	width:120px;
+	height:120px;
+	background-color:hsla(170, 30%, 40%, 0.6);
+	border-radius:50%;
+	
 }
 
+div.circle_about_me:hover{
+	box-shadow: 5px 5px 10px #999;
+}
+
+#Fanny{
+	margin:60px 0px 0px -58px;
+}
+li.fanny{
+	margin-left:33px;
+}
 #Anye{
-	margin: 0 auto 12px auto;
+	margin:59px -40px 0px 0px;
+}
+li.anye{
+	margin-left:28px;
 }
 
-#Steffy{
-	margin: 0 auto 12px auto;
+li.menu_about{
+	font-family:'Oswald', sans-serif;
+	display:list-item;
+	text-align:center;
+}
+li.menu_about a:visited{
+	color:black;
+	text-decoration:none;
+}
+
+
+a.hover_about{
+	color:#39D5D5;
+	/*color:#16DEB1;*/
+}
+
+a.hover_about:hover{
+	color:white;
 }
 
 div#estudiantes{
 	display:flex;
 	justify-content:center;
-	min-height:260px;
-	
+	min-height:260px;	
 }
-
-/*#cambiarfondo,*/#estudiantes img {
+#estudiantes img {
 	padding: 15px;
 	width: 140px;
 	height: 140px;
 	border-radius:50%;
 }
-#estudiantes img:hover{
-	box-shadow: 5px 5px 10px #999;
-	width: 160px;
-	height: 160px;
-
-}
-
 .estudiante{
 	min-width:192px;
+	z-index:1;
 }
-div#cambiarfondo{
-	min-width:232px;
-	border-radius:50%;
-	position:absolute;
-	opacity:0;
-	background-color:#8FE5E5;
-	 	
-	}
+
+
 h2.titulo{
 	color:white;
 	text-shadow: -1px -1px 15px black;
@@ -126,7 +140,6 @@ h2.titulo{
 	margin: 0 16px 12px auto;
 	text-align:center;
 }
-
 .nombres p{
 	color: black;
 	text-shadow: -1px 1px 0 white;
@@ -135,36 +148,48 @@ h2.titulo{
 	margin:0;
 	text-align:center;		
 }
-
 .center{
 	display:flex;
 	justify-content:space-around;
 	flex-wrap:wrap;		
 }
-
 .half-block{
-	min-width: 420px;
-	min-height: 289px;
+	min-width:420px;
+	min-height:289px;
 }
 
 .block{
-	min-width: 141px;
+	min-width:141px;
 }
-
-
-
-.logos img{
-
-	padding: 15px;
+#cambiarfondo,#lg,.logos img{
+	padding:15px;
 	width: 90px;
 	height:90px;
 	border-radius:50%;
 }
-
-.logos img:hover{
+/*.logos img:hover{
 	box-shadow: 5px 5px 10px #999;
 	width: 110px;
 	height: 110px;
+}*/
+
+div#cambiarfondo{
+	border-radius:50%;
+	position:absolute;
+	opacity:0;
+	background-size: 380px 380px;
+	background-image: url(fondo_tres.png);
+    background-color:#8FE5E5;
+    width: 110px;
+	height: 110px;
+	box-shadow: 5px 5px 10px #999;
+	width: 110px;
+	height: 110px;
+}
+
+div #lg{
+	opacity:0;
+	position:absolute;
 }
 
 div#coachcompany{
@@ -184,17 +209,17 @@ section#bloque3{
 nav#contenido ul {
 	position:relative;
 	top:-40px;
-	margin: 0 auto;
+	margin:0 auto;
 	display:block;
 	width: 372px;
 }
 	
 ul,li{
-	list-style-type: none;
+	list-style-type:none;
 	display: inline-block;
 	padding:0px;	
-
 }
+
 .menu a, .menu a:visited{
 	background-color:#0D1B1B;
     text-align:center;
