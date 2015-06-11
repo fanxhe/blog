@@ -15,15 +15,20 @@ $(function(){
 
 	});
 
-	$('#lg').hover(
-		function(){
-			$('#cambiarfondo').animate({opacity: 0.7}, 50);	
-			$("#lg").css('opacity',1);
-		},
-		function(){
-			$('#cambiarfondo').animate({opacity: 0}, 50);
-			$('#lg').css('opacity',0);
-	});
+	// $('#cambiarignacio').hover(
+	// 	function(){
+	// 		$('#cambiarignacio').animate({opacity:1}, 50);	
+	// 		$(".lgignacio").css('opacity',1);
+	// 		// $("#cambiarignacio").css('z-index',0);
+	// 		// $("#lgignacio").css('z-index',1000);
+	// 	},
+	// 	function(){
+	// 		$('#cambiarignacio').animate({opacity: 0}, 50);
+	// 		$('.lgignacio').css('opacity',0);
+	// 		// $("#cambiarignacio").css('z-index',1000);
+	// 		// $("#lgignacio").css('z-index',10000);
+
+	// });
 
 
 	// $('.circle_about_me').scroll(function(){

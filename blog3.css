@@ -6,7 +6,7 @@ html, body {
 }
 
 div#header{
-	background: url(header.jpg) no-repeat fixed bottom center;
+	background:url(header.jpg) no-repeat fixed bottom center;
     background-size:cover;
 	width:100%;
 	height:370px;
@@ -44,15 +44,15 @@ h1{
 
 	span#f{
 	 	font-size: 105px;
-	 	color:#46A1B6;
+	 	color:#16DE73;
 	}
 	span#x{
 	 	font-size:80px;
-	 	color:#46A1B6;
+	 	color:#16DE73;
 	}
 	span#t{
 	 	font-size: 100px; 
-	 	color:#46A1B6;
+	 	color:#16DE73;
 	}
 
 h2#description{
@@ -86,13 +86,13 @@ div.circle_about_me:hover{
 	margin:60px 0px 0px -58px;
 }
 li.fanny{
-	margin-left:33px;
+	margin-left:29px;
 }
 #Anye{
-	margin:59px -40px 0px 0px;
+	margin:53px -40px 0px 0px;
 }
 li.anye{
-	margin-left:28px;
+	margin-left:19px;
 }
 
 li.menu_about{
@@ -107,12 +107,14 @@ li.menu_about a:visited{
 
 
 a.hover_about{
-	color:#39D5D5;
+	font-size: 20px;
+	color:white;
+	text-shadow: -1px 1px 0 black;
 	/*color:#16DEB1;*/
 }
 
 a.hover_about:hover{
-	color:white;
+	color:#16DE73;
 }
 
 div#estudiantes{
@@ -161,36 +163,38 @@ h2.titulo{
 .block{
 	min-width:141px;
 }
-#cambiarfondo,#lg,.logos img{
+
+/*#cambiarignacio,#lgignacio,*/.logos img{
 	padding:15px;
 	width: 90px;
 	height:90px;
 	border-radius:50%;
 }
-/*.logos img:hover{
+.logos img:hover{
 	box-shadow: 5px 5px 10px #999;
 	width: 110px;
 	height: 110px;
-}*/
-
-div#cambiarfondo{
+}
+/*
+div#cambiarignacio{
 	border-radius:50%;
 	position:absolute;
 	opacity:0;
 	background-size: 380px 380px;
+	background-color:hsla(170, 30%, 40%, 0.6);
 	background-image: url(fondo_tres.png);
     background-color:#8FE5E5;
     width: 110px;
 	height: 110px;
 	box-shadow: 5px 5px 10px #999;
-	width: 110px;
-	height: 110px;
 }
 
-div #lg{
-	opacity:0;
+div.lgignacio,.lgignacio img{
+	width:40px;
+	height:40px;
+	opacity:1;
 	position:absolute;
-}
+}*/
 
 div#coachcompany{
 	text-align:center;
