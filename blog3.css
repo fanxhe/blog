@@ -13,7 +13,7 @@ div#header{
 	display:block;	
 }
 
-div#colima{
+div#cover{
 	background:url(hdr.jpg) no-repeat fixed bottom center;
     background-size:cover;
 	width:100%;
@@ -21,7 +21,8 @@ div#colima{
 	opacity:0;
 	display:block;
 	position:absolute;
-	top:0;
+	top: 45px;
+
 }
 section#bloque1{
 	background-color:#8FE5E5;
@@ -206,41 +207,73 @@ div#coachcompany{
 	min-width: 266px;
 }
 
-section#bloque3{
+#menu{
 	background-color:#0D1B1B;
 }
 
+nav#contenido {
+	position: fixed;
+ 	background-color: #0D1B1B;
+ 	width: 100%;
+ 	height: 50px;
+
+}
+
 nav#contenido ul {
-	position:relative;
-	top:-40px;
-	margin:0 auto;
+	position: static;
+	top:10px;
+	bottom: 10px;
+	margin: 0px;
 	display:block;
-	width: 372px;
+	width: 100%;
 }
 	
 ul,li{
 	list-style-type:none;
 	display: inline-block;
-	padding:0px;	
-}
+	padding:0px;
+	margin-top: 10px;
+	margin-bottom: 10px;	
 
 .menu a, .menu a:visited{
 	background-color:#0D1B1B;
     text-align:center;
     text-decoration:none;
-    font-size: 30px;
-    font-family:'Oswald', sans-serif;
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
     color: white;
     padding:10px;
-    margin:0px;
+    margin:10px;
 }
 
+/*Efectos del menú*/
 .menu a:hover{ 
-     box-shadow:2px 2px 5px #999;
      position:relative;         
      top:-5px;
      color:#46A1B6;
-}
+     font-size: 22px;
+     opacity: 1;
+     text-shadow: 0px 0px 13px #fff;
+	 webkit-transform: skew(-12deg);
+	 moz-transform: skew(-12deg);
+	 o-transform: skew(-12deg);
+	 ms-transform: skew(-12deg);
+	 transform: skew(-12deg);
+	 webkit-transition: all 0.4s ease-in-out;
+	 moz-transition: all 0.4s ease-in-out;
+	 o-transition: all 0.4s ease-in-out;
+	 ms-transition: all 0.4s ease-in-out;
+	 transition: all 0.4s ease-in-out;
+ }
+
+.menu li:hover{
+	opacity: 1;
+    color:#46A1B6;
+ 	animation: moveFromBottom 300ms ease-in-out;
+ 	color: transparent;
+	text-shadow: 0px 0px 10px #fff;
+	background: rgba(88,22,22,0.2);
+ }
 
 @font-face {
   font-family: 'Shadows Into Light';
