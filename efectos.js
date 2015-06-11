@@ -2,7 +2,7 @@ $(function(){
 
 	$(window).scroll(function(){
 		var opacidad = ($(window).scrollTop() / 200)
-		$('#colima').css('opacity',opacidad);
+		$('#cover').css('opacity',opacidad);
 				
 
 		if(($(window).scrollTop() > 500)&&($(window).scrollTop()<700)){
