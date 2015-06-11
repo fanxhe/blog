@@ -1,6 +1,6 @@
 html, body {
 	height: auto;
-	width: auto; 
+	width: auto;
 	margin: 0;
 	background-color:#0D1B1B;
 }
@@ -9,24 +9,28 @@ div#header{
 	background:url(header.jpg) no-repeat fixed bottom center;
     background-size:cover;
 	width:100%;
-	height:370px;
-	display:block;	
+	height:375px;
+	display:block;
+	position:relative;
+	top:50px;
+
 }
 
 div#cover{
 	background:url(hdr.jpg) no-repeat fixed bottom center;
     background-size:cover;
 	width:100%;
-	height:370px;
+	height:375px;
 	opacity:0;
 	display:block;
 	position:absolute;
-	top: 45px;
+	top:50px;
+
 
 }
 section#bloque1{
 	background-color:#8FE5E5;
-	background-image:url(fondo_tres.png);	
+	background-image:url(fondo_tres.png);
 	background-size:380px 380px;
 	min-height:1500px;
 }
@@ -40,7 +44,7 @@ h1{
 	color:white;
 	text-align:center;
 	position:relative;
-	top:-75px;
+	top:-35px;
 }
 
 	span#f{
@@ -52,15 +56,15 @@ h1{
 	 	color:#16DE73;
 	}
 	span#t{
-	 	font-size: 100px; 
+	 	font-size: 100px;
 	 	color:#16DE73;
 	}
 
 h2#description{
 	margin-bottom:120px;
 	font-size:25px;
-	
-} 
+
+}
 
 span.mayor{
 	font-size: 30px;
@@ -76,7 +80,7 @@ div.circle_about_me{
 	height:120px;
 	background-color:hsla(170, 30%, 40%, 0.6);
 	border-radius:50%;
-	
+
 }
 
 div.circle_about_me:hover{
@@ -121,7 +125,7 @@ a.hover_about:hover{
 div#estudiantes{
 	display:flex;
 	justify-content:center;
-	min-height:260px;	
+	min-height:260px;
 }
 #estudiantes img {
 	padding: 15px;
@@ -149,12 +153,12 @@ h2.titulo{
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
 	margin:0;
-	text-align:center;		
+	text-align:center;
 }
 .center{
 	display:flex;
 	justify-content:space-around;
-	flex-wrap:wrap;		
+	flex-wrap:wrap;
 }
 .half-block{
 	min-width:420px;
@@ -209,31 +213,33 @@ div#coachcompany{
 
 #menu{
 	background-color:#0D1B1B;
+	width: 100%;
+	position: fixed;
+ 	height: 50px;
+ 	z-index: 9999;
 }
 
 nav#contenido {
 	position: fixed;
  	background-color: #0D1B1B;
- 	width: 100%;
- 	height: 50px;
-
 }
 
 nav#contenido ul {
-	position: static;
+	position:static;
 	top:10px;
 	bottom: 10px;
 	margin: 0px;
 	display:block;
 	width: 100%;
 }
-	
+
 ul,li{
 	list-style-type:none;
 	display: inline-block;
 	padding:0px;
 	margin-top: 10px;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
+}
 
 .menu a, .menu a:visited{
 	background-color:#0D1B1B;
@@ -247,8 +253,8 @@ ul,li{
 }
 
 /*Efectos del menú*/
-.menu a:hover{ 
-     position:relative;         
+.menu a:hover{
+     position:relative;
      top:-5px;
      color:#46A1B6;
      font-size: 22px;
