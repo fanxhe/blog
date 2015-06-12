@@ -1,0 +1,65 @@
+html{
+  background-color:#C1F6F6;
+  height:auto;
+  width:auto;
+}
+
+body{
+  height:auto;
+  width:auto;
+  background-color:#C1F6F6;
+  background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+  position:relative;
+}
+
+div.fondo{
+  height:100%;
+  width:100%;
+  opacity: 0.3;
+  position:absolute;
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+}
+
+div#anye_fondo{
+  /*Aqui metemos una foto personal, o bien lo quitamos */
+  background:url(header.jpg) no-repeat fixed center;
+  background-size:cover;
+}
+
+div#fany_fondo{
+  /*Aqui metemos una foto personal, o bien lo quitamos */
+  background:url(header.jpg) no-repeat fixed center;
+  background-size:cover;
+}
+
+section.personals_description{
+  display: block;
+  margin: 0 auto;
+  top:100px;
+  position:relative;
+  height:500px;
+  width:800px;
+  background-color:#C1F6F6;
+  box-shadow: 10px 5px 10px 5px #999;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius:20%;
+}
+
+.personals_description h1{
+  /* o center segun como veamos*/text-align: left;
+  color:#57003f;
+  text-align:center;
+  top:50px;
+  font-size:40px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.personals_description p{
+  margin-left:40px;
+  font-size:30px;
+  color:#246271;
+  font-family: 'Architects Daughter', cursive;
+}
