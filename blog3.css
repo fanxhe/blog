@@ -7,26 +7,23 @@ html, body {
 
 div#header{
 	background:url(header.jpg) no-repeat fixed bottom center;
-    background-size:cover;
+  background-size:cover;
 	width:100%;
 	height:375px;
 	display:block;
 	position:relative;
 	top:50px;
-
 }
 
 div#cover{
 	background:url(hdr.jpg) no-repeat fixed bottom center;
-    background-size:cover;
+  background-size:cover;
 	width:100%;
 	height:375px;
 	opacity:0;
 	display:block;
 	position:absolute;
 	top:50px;
-
-
 }
 section#bloque1{
 	background-color:#8FE5E5;
@@ -63,7 +60,6 @@ h1{
 h2#description{
 	margin-bottom:120px;
 	font-size:25px;
-
 }
 
 span.mayor{
@@ -80,7 +76,6 @@ div.circle_about_me{
 	height:120px;
 	background-color:hsla(170, 30%, 40%, 0.6);
 	border-radius:50%;
-
 }
 
 div.circle_about_me:hover{
@@ -105,21 +100,20 @@ li.menu_about{
 	display:list-item;
 	text-align:center;
 }
-li.menu_about a:visited{
-	color:black;
+li.menu_about a{
 	text-decoration:none;
 }
 
 
-a.hover_about{
+a.hover_about,a.hover_about:visited{
+	text-decoration:none;
 	font-size: 20px;
 	color:white;
 	text-shadow: -1px 1px 0 black;
 	/*color:#16DEB1;*/
 }
-
 a.hover_about:hover{
-	color:#16DE73;
+	color:#57003f;
 }
 
 div#estudiantes{
@@ -188,8 +182,8 @@ div#cambiarignacio{
 	background-size: 380px 380px;
 	background-color:hsla(170, 30%, 40%, 0.6);
 	background-image: url(fondo_tres.png);
-    background-color:#8FE5E5;
-    width: 110px;
+  background-color:#8FE5E5;
+  width: 110px;
 	height: 110px;
 	box-shadow: 5px 5px 10px #999;
 }
@@ -242,7 +236,7 @@ ul,li{
 }
 
 .menu a, .menu a:visited{
-	background-color:#0D1B1B;
+		background-color:#0D1B1B;
     text-align:center;
     text-decoration:none;
     font-size: 20px;
@@ -274,7 +268,7 @@ ul,li{
 
 .menu li:hover{
 	opacity: 1;
-    color:#46A1B6;
+  color:#46A1B6;
  	animation: moveFromBottom 300ms ease-in-out;
  	color: transparent;
 	text-shadow: 0px 0px 10px #fff;
