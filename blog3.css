@@ -32,7 +32,7 @@ section#bloque1{
 	background-color:#8FE5E5;
 	background-image:url(fondo_tres.png);
 	background-size:380px 380px;
-	min-height:1500px;
+	min-height:500px;
 }
 
 h1{
@@ -72,6 +72,32 @@ span.mayor{
 
 #description p{
 	text-shadow: 20px -1px 20px #46A1B6;
+}
+
+section#social-share{
+	bottom: 80px;
+	position: relative;
+	text-align: center;
+}
+
+section#team{
+	background-color: #000;
+}
+
+section#social-share{
+	display: inline-block;	
+	position: relative;
+	text-align: center;
+}
+
+div.twitter-share{
+	float:right;
+}
+
+div.g-plus{
+	float: center;
+	position: relative;
+	text-align: center;
 }
 
 div.circle_about_me{
