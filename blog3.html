@@ -7,21 +7,45 @@
 		<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
 		<script type="text/javascript" src="efectos.js"></script>
+
 	</head>
 
 	<body>
 
-		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-557bd06b62e04e14" async="async">
-		</script>
-
 		<div id='menu'> <!-- Barra menú, se mantiene en posición superior -->
+
+			<section id='social-share'>
+
+				<div class="a2a_kit a2a_default_style">
+				<a class="a2a_dd" href="https://www.addtoany.com/share_save?linkurl=http%3A%2F%2Ffanxhe.herokuapp.com%2F&amp;linkname=Fanxhe%20Team">Share</a>
+				<span class="a2a_divider"></span>
+				<a class="a2a_button_facebook"></a>
+				<a class="a2a_button_twitter"></a>
+				<a class="a2a_button_google_plus">
+				</a>
+				</div>
+
+				<script type="text/javascript">
+				var a2a_config = a2a_config || {};
+				a2a_config.linkname = "Fanxhe Team";
+				a2a_config.linkurl = "http://fanxhe.herokuapp.com/";
+				a2a_config.num_services = 4;
+				a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+				</script>
+				<script type="text/javascript" src="//static.addtoany.com/menu/page.js">
+				</script>
+			</section>
+
+
 			<nav id="contenido">
 				<ul>
 					<li class='menu'><a href="#students">About</a></li>
 					<li class='menu'><a href="#students">Blog</a></li>
 					<li class='menu'><a href="#">Our Style Guide</a></li>
 				</ul>
+
 			</nav>
+
 		</div>
 
 		<div id='header'>
@@ -43,55 +67,6 @@
 				<p><span class="mayor">Great things are expecting for us this summer</span></p>
 			<h2></h2>
 
-			<section id='social-share'>
-
-			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js">
-			</script>
-
-			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-557bd06b62e04e14" async="async">
-			</script>
-
-
-			<!--Share Twitter
-			<div id="twitter-share"></div> 
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fanxhe.herokuapp.com/" data-via="Fanxhe" data-size="large" data-hashtags="FanxheTeam" data width="150" data height="100">Tweet</a>
-
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-			</script>-->
-
-			<!--Share Facebook
-			<div id="fb-root"></div>
-				<script>(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "http://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.3";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-				</script>
-
-				<div class="fb-share-button" data-href="http://fanxhe.herokuapp.com/"  data-layout="button_count" data width="150" data height="100"></div>-->
-
-				<!--Share Google
-				<div class="g-plus" data-action="share" data-width="150" data-href="http://fanxhe.herokuapp.com/">
-				</div>
-
-				<script type="text/javascript">
-				  (function() {
-				    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-				    po.src = 'https://apis.google.com/js/platform.js';
-				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-				  })();
-				</script>-->
-
-				<!--Share Gmail
-
-				<a href="http://gmailsharebutton.com/oauth2callback" target="_blank" class="gmail-share-button"><img src="http://gmailsharebutton.com/static/images/gmail_share.png" alt="Share with Gmail Contacts" /></a><script src="http://gmailsharebutton.com/static/all.js"></script>-->
-
-			</section>
-
-		</section>
-
 			<section id='team'>
 				<h2 class="titulo">Students</h2>
 				<div id="estudiantes">
@@ -111,7 +86,8 @@
 
 				    <div class="nombres estudiante">
 						<img src="fany.jpeg">
-						<p>Estefania Cano Saíz</p>
+						<p>Estefania Cano</p>
+						<p>Sáiz</p>
 					</div>
 
 					<div class="circle_about_me"id='Fanny'>
