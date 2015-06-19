@@ -280,11 +280,20 @@ ul,li{
 
 .menu li:hover{
 	opacity: 1;
-  color:#46A1B6;
+  	color:#46A1B6;
  	animation: moveFromBottom 300ms ease-in-out;
  	color: transparent;
 	text-shadow: 0px 0px 10px #fff;
 	background: rgba(88,22,22,0.2);
+ }
+
+ footer{
+ 	background-color: #0D1B1B;
+ 	color: #FFF;
+ 	font-family: 'Architects Daughter', cursive;
+ 	font-size: 12px;
+ 	height: 30px;
+ 	margin-left: 10px;
  }
 
 @font-face {
