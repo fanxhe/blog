@@ -6,18 +6,16 @@ html, body {
 }
 /*Botones Share*/
 section#social-share{
+	color: #FFF;
 	display: inline-block;
 	float:right;
+	right: 10px;
 	position: relative;
 	text-align: center;
-	top:13px;
+	top:20px;
 }
 
-a.a2a_dd{
-	color: #FFF;
-}
-
-/*Cierre botones Share Css*/
+/*Cierre botones Share*/
 
 div#header{
 	background:url(header.jpg) no-repeat fixed bottom center;
