@@ -4,18 +4,18 @@ html, body {
 	margin: 0;
 	background-color:#0D1B1B;
 }
-
+/*Botones Share*/
 section#social-share{
+	color: #FFF;
 	display: inline-block;
 	float:right;
+	right: 10px;
 	position: relative;
 	text-align: center;
-	top:13px;
+	top:20px;
 }
 
-a.a2a_dd{
-	color: #FFF;
-}
+/*Cierre botones Share*/
 
 div#header{
 	background:url(header.jpg) no-repeat fixed bottom center;
