@@ -4,7 +4,6 @@ $(function(){
 		var opacidad = ($(window).scrollTop() / 200)
 		$('#cover').css('opacity',opacidad);
 
-
 		if(($(window).scrollTop() > 500)&&($(window).scrollTop()<700)){
 				// alert($(window).scrollTop());
 				$('.circle_about_me').css('opacity',1);
@@ -12,12 +11,21 @@ $(function(){
 		else if($(window).scrollTop()<500) {
 				$('.circle_about_me').css('opacity',0);
 		}
+
 	});
 
 	$('#about1,#about2,#about3,#about4').waypoint({
+		offset: 700,
+
 		handler: function(scroll){
+
       var section = $(this.element);
-			if(scroll== "down"){
+
+			// window.location.hash  = section[0]['id'];
+
+			if(scroll=="down"){
+
+					section.animatescroll();
 					section.find('.rectangulo').animate({opacity: 1}, 80);
 					section.find('.rectangulo1').animate({
 						'background-position-x': '50%',
@@ -29,7 +37,9 @@ $(function(){
 					}, 40);
 					section.find('.about_project').animate({opacity:1},1000);
 			}
+
 			else {
+			
 					section.find('.about_project').animate({opacity:0},1);
 					section.find('.rectangulo').animate({opacity: 0}, 80);
 					section.find('.rectangulo1').animate({
@@ -41,21 +51,10 @@ $(function(){
 						'background-position-y': "50%",
 					}, 40);
 			}
-		}
+	 }
 	});
+});
 
-
-
-
-	// var waypoint = new waypoint({
-	// 	element: document.getElementBy
-	//
-	// 	function(){
-	// 				$('.fondo_central').animate ({opacity:1},25);
-	// 				$('.about_project').animate ({opacity:1},1);
-	// 	});
-	//
-	// });
 
 
 
@@ -74,10 +73,8 @@ $(function(){
 
 	// });
 
-
 	// $('.circle_about_me').scroll(function(){
 	// 	alert("entra")
 
 	// 	$('.circle_about_me').animate({opacity:1}, 1000);
 	// });
-});

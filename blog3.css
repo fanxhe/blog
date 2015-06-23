@@ -46,15 +46,15 @@ h1#fanxhe{
 
 	span#f{
 	 	font-size: 105px;
-		color:#46A1B6;
+		color:#189CCB;
 	}
 	span#x{
 	 	font-size:80px;
-	 	color:#46A1B6;
+	 	color:#189CCB;
 	}
 	span#t{
 	 	font-size: 100px;
-	 	color:#46A1B6;
+	 	color:#189CCB;
 	}
 
 h2#description{
@@ -206,6 +206,7 @@ div#coachcompany{
 }
 
 #menu{
+	display: flex;
 	background-color:#0D1B1B;
 	width:100%;
 	position: fixed;
