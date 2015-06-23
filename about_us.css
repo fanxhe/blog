@@ -16,11 +16,8 @@ body{
 div.fondo{
   height:100%;
   width:100%;
-  opacity: 0.3;
+  opacity:0.3;
   position:absolute;
-  display:flex;
-  justify-content:center;
-  flex-direction: column;
 }
 
 div#anye_fondo{
@@ -74,7 +71,7 @@ section#description_anye{
   margin-right:0px;
 }
 section.personals_description{
-  display: block;
+  display:block;
   top:100px;
   position:relative;
   height:500px;

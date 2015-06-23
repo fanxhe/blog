@@ -1,8 +1,8 @@
 html, body {
-	height: auto;
-	width: auto;
+	height:auto;
+	width:auto;
 	margin: 0;
-	background-color:#0D1B1B;
+	background:transparent;
 }
 
 div#header{
@@ -32,7 +32,7 @@ section#bloque1{
 	min-height:1500px;
 }
 
-h1{
+h1#fanxhe{
 	width: 400px;
 	margin: 0 auto;
 	background-color:#0D1B1B;
@@ -46,15 +46,15 @@ h1{
 
 	span#f{
 	 	font-size: 105px;
-	 	color:#16DE73;
+		color:#46A1B6;
 	}
 	span#x{
 	 	font-size:80px;
-	 	color:#16DE73;
+	 	color:#46A1B6;
 	}
 	span#t{
 	 	font-size: 100px;
-	 	color:#16DE73;
+	 	color:#46A1B6;
 	}
 
 h2#description{
@@ -144,7 +144,7 @@ h2.titulo{
 .nombres p{
 	color: black;
 	text-shadow: -1px 1px 0 white;
-	font-family: 'Oswald', sans-serif;
+	font-family:'Oswald', sans-serif;
 	font-size: 20px;
 	margin:0;
 	text-align:center;
@@ -207,7 +207,7 @@ div#coachcompany{
 
 #menu{
 	background-color:#0D1B1B;
-	width: 100%;
+	width:100%;
 	position: fixed;
  	height: 50px;
  	z-index: 9999;
@@ -275,6 +275,97 @@ ul,li{
 	background: rgba(88,22,22,0.2);
  }
 
+/*<Seccion about>*/
+
+ section#about1,#about2,#about3,#about4{
+	width:100%;
+	height:800px;
+	position:relative;
+	background-color: white;
+}
+
+div#fondo_about1{
+	width:100%;
+	height:800px;
+	/*alternativa de fondo 1*/
+	background:url(colima.jpg) no-repeat fixed;
+	background-size:cover;
+	position:absolute;
+}
+
+/*alternativa de fondo 2*/
+
+div#fondo_about2{
+	width:100%;
+	height:800px;
+	background-color: #46A1B6;
+	background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+	opacity:0.8;
+	position:absolute;*/
+}
+
+div#fondo_about3{
+	width:100%;
+	height:800px;
+	background-color: #226764;
+	background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+	position:absolute;
+}
+
+div#fondo_about4{
+	width:100%;
+	height:800px;
+	background-color: #0D758E;
+	background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+	position:absolute;
+}
+
+div.rectangulo{
+	width:100%;
+	height:100%;
+	opacity: 0;
+	background:url(rectangulo.png) no-repeat;
+	background-size:100% 100%;
+  position:relative;
+}
+
+div.rectangulo1{
+	background-position:-1000px 50%;
+}
+div.rectangulo2{
+	background-position:1000px 50%;
+}
+
+
+/*Titulos , y descripciones de about */
+
+div.about_project{
+	opacity: 0;
+	width:800px;
+	display:block;
+	margin:0 auto;
+	position:absolute;
+	margin-left: 25%;
+	top:200px;
+}
+
+div h1.titulo_about{
+	font-family:'Oswald', sans-serif;
+	font-size: 40px;
+}
+
+div h2#contenido_about{
+	font-size: 30px;
+}
+
+
+
+
+
+
  footer{
  	background-color: #0D1B1B;
  	bottom:5px;
@@ -286,7 +377,7 @@ ul,li{
  }
 
 @font-face {
-  font-family: 'Shadows Into Light';
+  font-family:'Shadows Into Light';
   font-style: normal;
   font-weight: 400;
   src: local('Shadows Into Light'), local('ShadowsIntoLight'),url(shadows.woff2) format('woff2');
