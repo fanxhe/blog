@@ -1,0 +1,28 @@
+section#social-share{
+	color: #FFF;
+	display: inline-block;
+	float: right;
+	position: relative;
+	right: 30px;
+	text-align: center;
+	top:15px;
+}	
+
+.a2a_default_style a {
+  background-color: #FFF;
+  border-radius: 20px;
+  float: left;
+  height: 17px;
+  width: 17px;
+  margin-right: 7px;
+  line-height: 16px;
+  padding: 0px !important;
+ }
+
+ .a2a_default_style a:hover {
+  background: #000;
+ }
+
+  .a2a_default_style a:visited {
+  background: #gray;
+ }
