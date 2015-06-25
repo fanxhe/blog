@@ -4,7 +4,7 @@ html, body {
 	margin: 0;
 	background-color:#0D1B1B;
 }
-
+/*Botones Share*/
 section#social-share{
 	display: inline-block;
 	float:right;
@@ -16,6 +16,8 @@ section#social-share{
 a.a2a_dd{
 	color: #FFF;
 }
+
+/*Cierre botones Share Css*/
 
 div#header{
 	background:url(header.jpg) no-repeat fixed bottom center;
