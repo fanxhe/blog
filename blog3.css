@@ -5,6 +5,15 @@ html, body {
 	background:transparent;
 }
 
+div#onepage-scroll{
+	min-height:800px;
+	height: 100%;
+	width:100%;
+	top: 40px;
+}
+/*BLOQUE1*/
+
+
 div#header{
 	background:url(header.jpg) no-repeat fixed bottom center;
   background-size:cover;
@@ -12,7 +21,6 @@ div#header{
 	height:375px;
 	display:block;
 	position:relative;
-	top:50px;
 }
 
 div#cover{
@@ -23,13 +31,6 @@ div#cover{
 	opacity:0;
 	display:block;
 	position:absolute;
-	top:50px;
-}
-section#bloque1{
-	background-color:#8FE5E5;
-	background-image:url(fondo_tres.png);
-	background-size:380px 380px;
-	min-height:1500px;
 }
 
 h1#fanxhe{
@@ -41,7 +42,7 @@ h1#fanxhe{
 	color:white;
 	text-align:center;
 	position:relative;
-	top:-35px;
+	top:-75px;
 }
 
 	span#f{
@@ -60,6 +61,7 @@ h1#fanxhe{
 h2#description{
 	margin-bottom:120px;
 	font-size:25px;
+	margin: 0;
 }
 
 span.mayor{
@@ -70,10 +72,48 @@ span.mayor{
 	text-shadow: 20px -1px 20px #46A1B6;
 }
 
+
+/*BLOQUE2*/
+
+/*Letras bloque2 (titulo y nombres)*/
+
+
+h2.titulo{
+	color:white;
+	text-shadow: -1px -1px 15px black;
+	font-size:25px;
+	font-family:'Oswald', sans-serif;
+	margin: 14px 16px 12px auto;
+	text-align:center;
+}
+
+.nombres p{
+	color: black;
+	text-shadow: -1px 1px 0 white;
+	font-family:'Oswald', sans-serif;
+	font-size: 17px;
+	margin:0;
+	text-align:center;
+}
+
+/*Fondo del bloque 1 y 2*/
+
+section#bloque1,#bloque2{
+	width:100%;
+	height:100%;
+	background-color:#8FE5E5;
+	background-image:url(fondo_tres.png);
+	background-size:350px 350px;
+	min-height:100%;
+}
+
+
+/*Menu lateral de estudiantes efectos circulos al lado de estudiantes*/
+
 div.circle_about_me{
 	opacity: 0;
-	width:120px;
-	height:120px;
+	width:110px;
+	height:110px;
 	background-color:hsla(170, 30%, 40%, 0.6);
 	border-radius:50%;
 }
@@ -116,15 +156,17 @@ a.hover_about:hover{
 	color:#57003f;
 }
 
+/*Bloque2, flex pagina */
+
 div#estudiantes{
 	display:flex;
 	justify-content:center;
-	min-height:260px;
+	/*min-height:30%;*/
 }
 #estudiantes img {
 	padding: 15px;
-	width: 140px;
-	height: 140px;
+	width: 130px;
+	height: 130px;
 	border-radius:50%;
 }
 .estudiante{
@@ -132,23 +174,6 @@ div#estudiantes{
 	z-index:1;
 }
 
-
-h2.titulo{
-	color:white;
-	text-shadow: -1px -1px 15px black;
-	font-size:30px;
-	font-family:'Oswald', sans-serif;
-	margin: 0 16px 12px auto;
-	text-align:center;
-}
-.nombres p{
-	color: black;
-	text-shadow: -1px 1px 0 white;
-	font-family:'Oswald', sans-serif;
-	font-size: 20px;
-	margin:0;
-	text-align:center;
-}
 .center{
 	display:flex;
 	justify-content:space-around;
@@ -156,7 +181,7 @@ h2.titulo{
 }
 .half-block{
 	min-width:420px;
-	min-height:289px;
+	min-height:30%;
 }
 
 .block{
@@ -164,15 +189,15 @@ h2.titulo{
 }
 
 /*#cambiarignacio,#lgignacio,*/.logos img{
-	padding:15px;
+	padding:10px;
 	width: 90px;
 	height:90px;
 	border-radius:50%;
 }
 .logos img:hover{
 	box-shadow: 5px 5px 10px #999;
-	width: 110px;
-	height: 110px;
+	width: 100px;
+	height: 100px;
 }
 /*
 div#cambiarignacio{
@@ -197,7 +222,6 @@ div.lgignacio,.lgignacio img{
 
 div#coachcompany{
 	text-align:center;
-	min-height: 90px;
 	display:flex;
 	justify-content:center;
 }
@@ -278,18 +302,19 @@ ul,li{
 
 /*<Seccion about>*/
 
- section#about1,#about2,#about3,#about4{
+section#about1,#about2,#about3,#about4{
 	width:100%;
 	height:800px;
 	position:relative;
-	background-color: white;
+
 }
 
 div#fondo_about1{
 	width:100%;
 	height:800px;
 	/*alternativa de fondo 1*/
-	background:url(colima.jpg) no-repeat fixed;
+	background-image: url(colima.jpg);
+	background-repeat: no-repeat;
 	background-size:cover;
 	position:absolute;
 }
