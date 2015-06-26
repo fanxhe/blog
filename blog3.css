@@ -232,12 +232,11 @@ div#coachcompany{
 }
 
 #menu{
-	display: flex;
 	background-color:#0D1B1B;
-	width:100%;
 	position: fixed;
  	height: 50px;
  	z-index: 9999;
+	width: 100%;
 }
 
 nav#contenido {
@@ -387,10 +386,6 @@ div h1.titulo_about{
 div h2#contenido_about{
 	font-size: 30px;
 }
-
-
-
-
 
 
  footer{
