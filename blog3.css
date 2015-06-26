@@ -72,7 +72,6 @@ span.mayor{
 	text-shadow: 20px -1px 20px #46A1B6;
 }
 
-
 /*BLOQUE2*/
 
 /*Letras bloque2 (titulo y nombres)*/
@@ -146,7 +145,6 @@ li.menu_about a{
 	text-decoration:none;
 }
 
-
 a.hover_about,a.hover_about:visited{
 	text-decoration:none;
 	font-size: 20px;
@@ -188,9 +186,11 @@ div#estudiantes{
 
 .block{
 	min-width:141px;
+	min-height:30%;
+	flex-shrink:5;
 }
 
-/*#cambiarignacio,#lgignacio,*/.logos img{
+.logos img{
 	padding:10px;
 	width: 90px;
 	height:90px;
