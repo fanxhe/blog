@@ -4,20 +4,6 @@ html, body {
 	margin: 0;
 	background-color:#0D1B1B;
 }
-/*Botones Share*/
-section#social-share{
-	display: inline-block;
-	float:right;
-	position: relative;
-	text-align: center;
-	top:13px;
-}
-
-a.a2a_dd{
-	color: #FFF;
-}
-
-/*Cierre botones Share Css*/
 
 div#header{
 	background:url(header.jpg) no-repeat fixed bottom center;
@@ -291,6 +277,7 @@ ul,li{
 
  footer{
  	background-color: #0D1B1B;
+ 	bottom:5px;
  	color: #FFF;
  	font-family: 'Architects Daughter', cursive;
  	font-size: 12px;

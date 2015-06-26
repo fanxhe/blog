@@ -1,0 +1,34 @@
+section#social-share{
+	color: #FFF;
+	display: inline-block;
+	float: right;
+	position: relative;
+	right: 30px;
+	text-align: center;
+	top:15px;
+}	
+
+.a2a_default_style a {
+
+  background-color: #8FE5E5;
+  border-radius: 20px;
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-right: 7px;
+  line-height: 16px;
+  padding: 0px !important;
+ }
+
+ .a2a_default_style a:hover {
+  	background: #FFF; 
+   	-webkit-transform: scale(1.3,1.3) rotate(45deg);
+	-moz-transform: scale(1.3,1.3) rotate(45deg);
+  	-ms-transform: scale(1.3,1.3) rotate(45deg);
+	-o-transform: scale(1.3,1.3) rotate(45deg);
+  	transform: scale(1.3,1.3) rotate(45deg);*/
+ }
+
+  .a2a_default_style a:visited {
+  	background: #0D1B1B;
+ }
