@@ -15,7 +15,7 @@ $(function(){
 
 		var activarRectangulos = function(){
 			var section = $('div.active');
-			section.find('.rectangulo').animate({opacity: 1}, 200);
+			section.find('.rectangulo').animate({opacity:0.9}, 200);
 			section.find('.rectangulo1').animate({
 				'background-position-x': '50%',
 				'background-position-y': '50%',
@@ -43,7 +43,6 @@ $(function(){
 
 
     $('#fullpage').fullpage({
-
         scrollingSpeed: 700,
         autoScrolling: true,
         fitToSection:false,
