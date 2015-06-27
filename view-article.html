@@ -3,9 +3,8 @@
 	<head>
 	 	<meta charset='utf-8'>
 	 	<link href= 'view-article.css' rel="stylesheet"type= "text/css"/>
-		<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Kotta+One|Flamenco|Source+Code+Pro|Courgette|Shadows+Into+Light+Two|Architects+Daughter' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
 
 	 </head>
 
@@ -37,6 +36,7 @@
 			
 			<nav id="contenido">
 					<ul>
+						<li class='menu'><a href="#Home">Home</a></li>
 						<li class='menu'><a href="#About">About</a></li>
 						<li class='menu'><a href="#Blog">Blog</a></li>
 						<li class='menu'><a href="#OurStyleGuide">Our Style Guide</a></li>
@@ -46,11 +46,28 @@
 		</div>
 
 
-	 		<!--<div id='article-view'>
+	 		<div id='article-view'>
 
-	 				<h1><pre> <> </> </pre></h1>
+	 		<pre><code>
 
-	 		</div>-->
+	 				var fanxheTeam = {<br>
+							students: 'Fany', 'Anxhe',<br>
+							coaches: 'Tapia', 'Nacho',<br>
+							crowdContact: 'Vic',<br>
+							coachCompany: 'Crowd Interactive',<br>
+							supervisor: 'Katrin',<br>
+							livingStyleGuide: 'Haguenburger', 'Jen',<br>
+	
+						team: function(){<br>
+							return 'Fanxhe Team is : ' + this.students + ', ' + this.coaches + ', ' + this.crowdContact + ', ' + this.coachCompany + ', ' <br>
+							+ this.supervisor +  ' ' + this.livingStyleGuide + ' ^_^';<br>
+						}<br>
+
+					}
+
+			</code></pre>
+
+	 		</div>
 
 	 		<section id= 'post-area'>
 
@@ -58,8 +75,13 @@
 	 						<h2> My New BlogPost</h2>
 	 				</div>
 
+
 	 				<div id ='post'
-	 						<p> Blog del equipo Fanxhe </p>
+	 						<p> When a company co-founder and CEO took the stage at a tech startup pitching contest in Silicon Valley recently, the last thing she had on her mind was her gender. Yet as she made her way to the stage to deliver a carefully practiced pitch for investment funding, not all the audience were applauding. Some were cat-calling.
+
+							She ignored the unwanted attention and concentrated on her pitch, but later reflected on the inappropriateness. “For these people it was just a little joke but why? It was a professional conference,” she says, declining to use her name for fear it might jeopardise future funding chances.</p>
+
+							<p>The incident is representative of a larger truth recognised by many women in Silicon Valley’s tech industry: sexist behaviour is alive and well. A long string of lawsuits alleging sexual harassment at tech startup companies and venture capital firms is currently making its way through the courts. And the sexist culture spills out in public, too. At last month’s annual Crunchies – the tech world’s closest thing to the Oscars – the presenter repeatedly called one woman in the audience a bitch and casually threw out a racist remark (the event’s hosts, the blog Techcrunch, apologised).</p>
 	 				</div>
 
 	 		</section>
@@ -67,11 +89,43 @@
 
 	 		<section id='categories'>
 
-	 				<div id= 'article-categories'>
-
-	 					<h5>Topics of the posts</h5>
-
+	 				<div id="sidebar">TOPICS
 	 				</div>
+
+	 				<ul>
+	 					<li>> Living Style Guide</li> <a href=''> <br>
+
+	 					<li>> Rails Girls Summer of Code</li> <a href=''> <br>
+
+	 					<li>> JavaScript</li> <a href=''> <br>
+	 					<li>> Ruby</li> <a href=''> <br>
+	 					<li>> HTML</li> <a href=''> <br>
+	 					<li>> CSS & SASS</li> <a href=''> <br>
+	 					<li>> Markdown</li> <a href=''> <br>
+	 					<li>> Learning Process</li> <a href=''>
+	 				</ul>
+	 		
+
+	 						<script type="text/javascript">
+	 					(function(){
+
+							var offset = $("#sidebar").offset();
+							console.log(offset);
+							var topPadding = 150;
+							$(window).scroll(function() {
+								if ($("#sidebar").height() < $(window).height() && $(window).scrollTop() > offset.top) {
+
+									$("#sidebar").stop().animate({
+											marginTop: $(window).scrollTop() - offset.top + topPadding
+										});
+								} else {
+									$("#sidebar").stop().animate({
+										marginTop: 0
+									});
+									};
+								});
+						})();
+						</script>
 
 	 		</section>
 
@@ -86,6 +140,7 @@
 
 							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-557bd06b62e04e14" async="async">
 							</script>
+
 						</section>
 
 			</footer>

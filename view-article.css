@@ -113,14 +113,27 @@ ul,li{
  }
 
  #article-view {
- 	color: #red;
+ 	color: #7290D5;
+	font-family: 'Source Code Pro';
+ 	font-size: 8px;
+ 	font-weight: bold;
+ 	line-height: 0.9em;
+ 	margin-left: -160px; 
+ 	margin-top: 70px;
+ 	opacity: 0.7;
+ 	position: relative;
+ 	text-align: left;
+ 	z-index: 1;
  }
+
+
+ /*Area de blog posts*/
 
  #post-area {
  	color: #000;
  	display: block;
  	height: 700px;
- 	margin-top: 180px;
+ 	margin-top: -160px;
  	margin-left: 180px;
  	width: 650px;
 
@@ -131,23 +144,68 @@ ul,li{
     font-family: 'Architects Daughter', cursive;
  	font-size: 30px;
  	font-weight: bold;
+ 	margin-bottom: 70px;
  	text-align: center;
  }
 
  #post{
  	color: #000;
- 	font-family: 
- 	font-size: 38px;
+	font-family: 'Flamenco', cursive;
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	line-height: 2em;
+ 	text-align: left;
+ }
+
+/*Categorías*/
+
+ #categories{
+ 	bottom: 610px;
+ 	float: right;
+ 	height: 200px;
+ 	position: relative;
+ 	right: 70px;
+ 	width: 250px;
+ }
+
+ #sidebar{
+
+ 	border-top: 1px;
+ 	border-left: 1px;
+ 	border-color: #7290D5;
+ 	color: #009BCD;
+ 	font-family: 'Architects Daughter', cursive;
+ 	font-size: 20px;
+ 	height: 40px;
  	font-weight: bold;
  	text-align: center;
+ 	width: 200px;
+ }
+
+ #categories li{
+ 	color: #0D1B1B;
+	font-family: 'Flamenco', cursive;
+ 	font-size: 14px;
+ 	font-weight: bold;
+ 	text-align: left;
+ }
+
+ #categories li:hover{
+ 	color: #FFF;
+ }
+
+ #categories li a:visited{
+ 	color: gray;
  }
 
  footer{
  	background-color: #0D1B1B;
+ 	bottom: 0px;
  	color: #FFF;
  	font-family: 'Architects Daughter', cursive;
  	font-size: 12px;
  	height: 30px;
- 	margin-left: 1px;
- 	margin-bottom: 1px;
+ 	padding: 2px;
+ 	position: relative;
+ 	top:170px;
  }
