@@ -15,7 +15,7 @@ $(function(){
 
 		var activarRectangulos = function(){
 			var section = $('div.active');
-			section.find('.rectangulo').animate({opacity:0.9}, 200);
+			section.find('.rectangulo').animate({opacity:1}, 200);
 			section.find('.rectangulo1').animate({
 				'background-position-x': '50%',
 				'background-position-y': '50%',
@@ -30,7 +30,7 @@ $(function(){
 		var desactivarRectangulos = function() {
 			var section = $('div.active');
 			section.find('.about_project').animate({opacity:0},200);
-			section.find('.rectangulo').animate({opacity: 0}, 200);
+			section.find('.rectangulo').animate({opacity:0}, 200);
 			section.find('.rectangulo1').animate({
 				'background-position-x': '-1000',
 				'background-position-y': '50%',
@@ -54,12 +54,16 @@ $(function(){
         normalScrollElements: '#bloque1',
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
+				slidesNavigation: true,
+				loopHorizontal: false,
+				controlArrows: false,
+				anchors: ['welcome','team', 'about'],
 
-				afterLoad:function(active){
-					console.log("afterload")
+				afterSlideLoad:function(active){
 					activarRectangulos();
 				},
-				onLeave: function(active){
+				
+				onSlideLeave: function(active){
 					desactivarRectangulos();
 				}
 
