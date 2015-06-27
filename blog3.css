@@ -303,7 +303,7 @@ div#fondo_about2{
 	width:100%;
 	height:800px;
 	background-color: #46A1B6;
-	background-image:url(fondo_tres.png);
+	/*background-image:url(fondo_tres.png);*/
   background-size:380px 380px;
 	opacity:0.8;
 	position:absolute;
@@ -313,7 +313,7 @@ div#fondo_about3{
 	width:100%;
 	height:800px;
 	background-color: #226764;
-	background-image:url(fondo_tres.png);
+	/*background-image:url(fondo_tres.png);*/
   background-size:380px 380px;
 	position:absolute;
 }
@@ -322,7 +322,7 @@ div#fondo_about4{
 	width:100%;
 	height:800px;
 	background-color: #0D758E;
-	background-image:url(fondo_tres.png);
+	/*background-image:url(fondo_tres.png);*/
   background-size:380px 380px;
 	position:absolute;
 }
@@ -331,7 +331,7 @@ div#fondo_about5{
 	width:100%;
 	height:800px;
 	background-color:#528892;
-	background-image:url(fondo_tres.png);
+	/*background-image:url(fondo_tres.png);*/
   background-size:380px 380px;
 	position:absolute;
 }
@@ -340,7 +340,7 @@ div#fondo_about5{
 	width:100%;
 	height:800px;
 	background-color:#528892;
-	background-image:url(fondo_tres.png);
+	/*background-image:url(fondo_tres.png);*/
   background-size:380px 380px;
 	position:absolute;
 }
@@ -348,7 +348,7 @@ div#fondo_about6{
 	width:100%;
 	height:800px;
 	background-color: #46A1B6;
-	background-image:url(fondo_tres.png);
+	/*background-image:url(fondo_tres.png);*/
   background-size:380px 380px;
 	opacity:0.8;
 	position:absolute;
@@ -358,7 +358,7 @@ div.rectangulo{
 	width:100%;
 	height:100%;
 	opacity: 0;
-	background:url(rectangulo.png) no-repeat;
+	/*background:url(rectangulo.png) no-repeat;*/
 	background-size:100% 100%;
   position:relative;
 }

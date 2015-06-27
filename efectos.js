@@ -5,7 +5,6 @@ $(function(){
 			$('#cover').css('opacity',opacidad);
 
 			if(($(window).scrollTop() > 500)&&($(window).scrollTop()<700)){
-					// alert($(window).scrollTop());
 					$('.circle_about_me').css('opacity',1);
 			}
 			else if($(window).scrollTop()<500) {
@@ -49,13 +48,11 @@ $(function(){
         scrollBar:true,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
-        loopHorizontal: true,
-        continuousVertical: false,
-        normalScrollElements: '#bloque1',
+        normalScrollElements: '#bloque1',//secciones q se comportaran con scroll normal
         touchSensitivity: 15,
-        normalScrollElementTouchThreshold: 5,
+        normalScrollElementTouchThreshold: 5,//sensibilidad del scroll
 				slidesNavigation: true,
-				loopHorizontal: false,
+				loopHorizontal: false,// Si estas en la ultima que no te regrese a la primera
 				controlArrows: false,
 				anchors: ['welcome','team', 'about'],
 
