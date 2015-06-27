@@ -396,13 +396,16 @@ div p.contenido_about{
 
 footer{
  	background-color: #0D1B1B;
- 	bottom:5px;
  	color: #FFF;
  	font-family: 'Architects Daughter', cursive;
- 	font-size: 12px;
- 	height: 30px;
- 	margin-left: 10px;
- }
+ 	font-size: 13px;
+	line-height: 13px;
+ 	height: 25px;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+}
 
 @font-face {
   font-family:'Shadows Into Light';

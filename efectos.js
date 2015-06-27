@@ -62,7 +62,7 @@ $(function(){
 				afterSlideLoad:function(active){
 					activarRectangulos();
 				},
-				
+
 				onSlideLeave: function(active){
 					desactivarRectangulos();
 				}
