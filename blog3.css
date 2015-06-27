@@ -358,7 +358,7 @@ div.rectangulo{
 	width:100%;
 	height:100%;
 	opacity: 0;
-	/*background:url(rectangulo.png) no-repeat;*/
+	background:url(rectangulo.png) no-repeat;
 	background-size:100% 100%;
   position:relative;
 }
@@ -368,6 +368,12 @@ div.rectangulo1{
 }
 div.rectangulo2{
 	background-position:1000px 50%;
+}
+
+
+.fp-slidesNav{
+	top:20% !important;
+	left:80% !important;
 }
 
 
