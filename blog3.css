@@ -99,7 +99,7 @@ h2.titulo{
 
 /*Fondo del bloque 1 y 2*/
 
-#home,#bloque2{
+#bloque1,#bloque2{
 	width:100%;
 	height:100%;
 	background-color:#8FE5E5;
