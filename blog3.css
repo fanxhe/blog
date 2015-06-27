@@ -1,9 +1,18 @@
 html, body {
-	height: auto;
-	width: auto;
+	height:auto;
+	width:auto;
 	margin: 0;
-	background-color:#0D1B1B;
+	background:transparent;
 }
+
+div#onepage-scroll{
+	min-height:800px;
+	height: 100%;
+	width:100%;
+	top: 40px;
+}
+
+/*BLOQUE1*/
 
 div#header{
 	background:url(header.jpg) no-repeat fixed bottom center;
@@ -11,8 +20,7 @@ div#header{
 	width:100%;
 	height:375px;
 	display:block;
-	position:relative;
-	top:50px;
+	position:absolute;
 }
 
 div#cover{
@@ -23,16 +31,9 @@ div#cover{
 	opacity:0;
 	display:block;
 	position:absolute;
-	top:50px;
-}
-section#bloque1{
-	background-color:#8FE5E5;
-	background-image:url(fondo_tres.png);
-	background-size:380px 380px;
-	min-height:1500px;
 }
 
-h1{
+h1#fanxhe{
 	width: 400px;
 	margin: 0 auto;
 	background-color:#0D1B1B;
@@ -41,23 +42,24 @@ h1{
 	color:white;
 	text-align:center;
 	position:relative;
-	top:-35px;
+	top:325px;
 }
 
 	span#f{
 	 	font-size: 105px;
-	 	color:#16DE73;
+		color:#189CCB;
 	}
 	span#x{
 	 	font-size:80px;
-	 	color:#16DE73;
+	 	color:#189CCB;
 	}
 	span#t{
 	 	font-size: 100px;
-	 	color:#16DE73;
+	 	color:#189CCB;
 	}
 
 h2#description{
+	margin-top: 350px;
 	margin-bottom:120px;
 	font-size:25px;
 }
@@ -70,10 +72,49 @@ span.mayor{
 	text-shadow: 20px -1px 20px #46A1B6;
 }
 
+/*BLOQUE2*/
+
+/*Letras bloque2 (titulo y nombres)*/
+#titulo-estudiantes {
+		padding-top: 70px;
+}
+
+h2.titulo{
+	color:white;
+	text-shadow: -1px -1px 15px black;
+	font-size:25px;
+	font-family:'Oswald', sans-serif;
+	margin: 0px 16px 12px auto;
+	text-align:center;
+}
+
+.nombres p{
+	color: black;
+	text-shadow: -1px 1px 0 white;
+	font-family:'Oswald', sans-serif;
+	font-size: 17px;
+	margin:0;
+	text-align:center;
+}
+
+/*Fondo del bloque 1 y 2*/
+
+#bloque1,#bloque2{
+	width:100%;
+	height:100%;
+	background-color:#8FE5E5;
+	background-image:url(fondo_tres.png);
+	background-size:350px 350px;
+	min-height:100%;
+}
+
+
+/*Menu lateral de estudiantes efectos circulos al lado de estudiantes*/
+
 div.circle_about_me{
 	opacity: 0;
-	width:120px;
-	height:120px;
+	width:110px;
+	height:110px;
 	background-color:hsla(170, 30%, 40%, 0.6);
 	border-radius:50%;
 }
@@ -104,7 +145,6 @@ li.menu_about a{
 	text-decoration:none;
 }
 
-
 a.hover_about,a.hover_about:visited{
 	text-decoration:none;
 	font-size: 20px;
@@ -116,15 +156,17 @@ a.hover_about:hover{
 	color:#57003f;
 }
 
+/*Bloque2, flex pagina */
+
 div#estudiantes{
 	display:flex;
 	justify-content:center;
-	min-height:260px;
+	/*min-height:30%;*/
 }
 #estudiantes img {
 	padding: 15px;
-	width: 140px;
-	height: 140px;
+	width: 130px;
+	height: 130px;
 	border-radius:50%;
 }
 .estudiante{
@@ -132,23 +174,6 @@ div#estudiantes{
 	z-index:1;
 }
 
-
-h2.titulo{
-	color:white;
-	text-shadow: -1px -1px 15px black;
-	font-size:30px;
-	font-family:'Oswald', sans-serif;
-	margin: 0 16px 12px auto;
-	text-align:center;
-}
-.nombres p{
-	color: black;
-	text-shadow: -1px 1px 0 white;
-	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
-	margin:0;
-	text-align:center;
-}
 .center{
 	display:flex;
 	justify-content:space-around;
@@ -156,48 +181,29 @@ h2.titulo{
 }
 .half-block{
 	min-width:420px;
-	min-height:289px;
+	min-height:30%;
 }
 
 .block{
 	min-width:141px;
+	min-height:30%;
+	flex-shrink:5;
 }
 
-/*#cambiarignacio,#lgignacio,*/.logos img{
-	padding:15px;
+.logos img{
+	padding:10px;
 	width: 90px;
 	height:90px;
 	border-radius:50%;
 }
 .logos img:hover{
 	box-shadow: 5px 5px 10px #999;
-	width: 110px;
-	height: 110px;
+	width: 100px;
+	height: 100px;
 }
-/*
-div#cambiarignacio{
-	border-radius:50%;
-	position:absolute;
-	opacity:0;
-	background-size: 380px 380px;
-	background-color:hsla(170, 30%, 40%, 0.6);
-	background-image: url(fondo_tres.png);
-  background-color:#8FE5E5;
-  width: 110px;
-	height: 110px;
-	box-shadow: 5px 5px 10px #999;
-}
-
-div.lgignacio,.lgignacio img{
-	width:40px;
-	height:40px;
-	opacity:1;
-	position:absolute;
-}*/
 
 div#coachcompany{
 	text-align:center;
-	min-height: 90px;
 	display:flex;
 	justify-content:center;
 }
@@ -207,10 +213,10 @@ div#coachcompany{
 
 #menu{
 	background-color:#0D1B1B;
-	width: 100%;
 	position: fixed;
  	height: 50px;
  	z-index: 9999;
+	width: 100%;
 }
 
 nav#contenido {
@@ -268,25 +274,141 @@ ul,li{
 
 .menu li:hover{
 	opacity: 1;
-  	color:#46A1B6;
+  color:#46A1B6;
  	animation: moveFromBottom 300ms ease-in-out;
  	color: transparent;
 	text-shadow: 0px 0px 10px #fff;
 	background: rgba(88,22,22,0.2);
  }
 
- footer{
+/*<Seccion about>*/
+
+#about1,#about2,#about3,#about4,#about5,#about6{
+	width:100%;
+	height:800px;
+	position:relative;
+}
+
+div#fondo_about1{
+	width:100%;
+	height:800px;
+	background-repeat:no-repeat;
+	background-color:#189CCB;
+	background-size:cover;
+	position:relative;
+}
+
+
+div#fondo_about2{
+	width:100%;
+	height:800px;
+	background-color: #46A1B6;
+	background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+	opacity:0.8;
+	position:absolute;
+}
+
+div#fondo_about3{
+	width:100%;
+	height:800px;
+	background-color: #226764;
+	background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+	position:absolute;
+}
+
+div#fondo_about4{
+	width:100%;
+	height:800px;
+	background-color: #0D758E;
+	background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+	position:absolute;
+}
+
+div#fondo_about5{
+	width:100%;
+	height:800px;
+	background-color:#528892;
+	background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+	position:absolute;
+}
+
+div#fondo_about5{
+	width:100%;
+	height:800px;
+	background-color:#528892;
+	background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+	position:absolute;
+}
+div#fondo_about6{
+	width:100%;
+	height:800px;
+	background-color: #46A1B6;
+	background-image:url(fondo_tres.png);
+  background-size:380px 380px;
+	opacity:0.8;
+	position:absolute;
+}
+
+div.rectangulo{
+	width:100%;
+	height:100%;
+	opacity: 0;
+	background:url(rectangulo.png) no-repeat;
+	background-size:100% 100%;
+  position:relative;
+}
+
+div.rectangulo1{
+	background-position:-1000px 50%;
+}
+div.rectangulo2{
+	background-position:1000px 50%;
+}
+
+
+/*Titulos , y descripciones de about */
+
+
+div.about_project{
+	opacity: 0;
+	width:700px;
+	display:block;
+	position:absolute;
+	top:240px;
+	margin-left:20%;
+}
+
+div h1.titulo_about, div p.titulo_about{
+	font-family:'Oswald', sans-serif;
+	font-size: 25px;
+}
+
+div p.contenido_about{
+	text-align: center;
+	font-size: 20px;
+	line-height:40px;
+}
+
+footer{
  	background-color: #0D1B1B;
- 	bottom:5px;
  	color: #FFF;
  	font-family: 'Architects Daughter', cursive;
- 	font-size: 12px;
- 	height: 30px;
- 	margin-left: 10px;
- }
+ 	font-size: 13px;
+	line-height: 13px;
+ 	height: 25px;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+}
 
 @font-face {
-  font-family: 'Shadows Into Light';
+  font-family:'Shadows Into Light';
   font-style: normal;
   font-weight: 400;
   src: local('Shadows Into Light'), local('ShadowsIntoLight'),url(shadows.woff2) format('woff2');
