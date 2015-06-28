@@ -5,6 +5,12 @@ html, body {
 	background:transparent;
 }
 
+a, a:visited {
+		text-decoration:none;
+		color:#189CCB;
+}
+
+
 div#onepage-scroll{
 	min-height:800px;
 	height: 100%;
@@ -12,7 +18,7 @@ div#onepage-scroll{
 	top: 40px;
 }
 
-/*BLOQUE1*/
+/*HOME*/
 
 div#header{
 	background:url(header.jpg) no-repeat fixed bottom center;
@@ -70,6 +76,10 @@ span.mayor{
 
 #description p{
 	text-shadow: 20px -1px 20px #46A1B6;
+}
+
+#description a{
+	color:black;
 }
 
 /*BLOQUE2*/
@@ -145,6 +155,7 @@ li.menu_about a{
 	text-decoration:none;
 }
 
+
 a.hover_about,a.hover_about:visited{
 	text-decoration:none;
 	font-size: 20px;
@@ -163,7 +174,7 @@ div#estudiantes{
 	justify-content:center;
 	/*min-height:30%;*/
 }
-#estudiantes img {
+#estudiantes img{
 	padding: 15px;
 	width: 130px;
 	height: 130px;
@@ -201,6 +212,7 @@ div#estudiantes{
 	width: 100px;
 	height: 100px;
 }
+
 
 div#coachcompany{
 	text-align:center;
@@ -370,6 +382,24 @@ div.rectangulo2{
 	background-position:1000px 50%;
 }
 
+/*ENLACES DE AVATARS EN LA SECCION ABOUT*/
+
+span.logo-inline {
+		margin:20px;
+		z-index:9999;
+}
+
+span.logo-inline img{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+
+}
+
+span.logo-inline:hover img{
+
+	box-shadow: 5px 5px 10px #999;
+}
 
 .fp-slidesNav{
 	top:20% !important;
