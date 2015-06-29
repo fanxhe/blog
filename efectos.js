@@ -48,7 +48,7 @@ $(function(){
         scrollBar:true,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
-        normalScrollElements: '#bloque1',//secciones q se comportaran con scroll normal
+        normalScrollElements: '#home',//secciones q se comportaran con scroll normal
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,//sensibilidad del scroll
 				slidesNavigation: true,
