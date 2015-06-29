@@ -195,12 +195,12 @@ span.vignette-colors{
  	color: #FFF;
  }
 
- #categories li a:visited{
+#categories li a:visited{
  	color: gray;
  }
 
 /*Fondo inferior código*/
- #Array{
+#Array{
  	bottom: 100px;
  	color: #7290D5;
  	float: right;
@@ -216,7 +216,7 @@ span.vignette-colors{
  	z-index: 1;
  }
 
- footer{
+footer{
  	background-color: #0D1B1B;
  	bottom: 1px;
  	color: #FFF;
@@ -226,5 +226,5 @@ span.vignette-colors{
  	height: 30px;
  	padding: 2px;
  	position: relative;
- 	top:220px;
+ 	top:280px;
  }
