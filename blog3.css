@@ -10,6 +10,9 @@ a, a:visited {
 		color:#189CCB;
 }
 
+a:hover{
+	color:#8FE5E5;
+}
 
 div#onepage-scroll{
 	min-height:800px;
