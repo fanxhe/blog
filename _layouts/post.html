@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="{{ "/css/post.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/share.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/pagination.css" | prepend: site.baseurl }}">
+    <link href="http://fonts.googleapis.com/css?family=Kotta+One|Alegreya+Sans|Source+Code+Pro|Courgette|Shadows+Into+Light+Two|Architects+Daughter" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/js/jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+    {% include menu.html %}
+
+    <div id="article-view">
+      <pre><code>
+          var fanxheTeam = {<br>
+                          students: 'Fany', 'Anxhe',<br>
+                          coaches: 'Tapia', 'Nacho',<br>
+                          crowdContact: 'Vic',<br>
+                          coachCompany: 'Crowd Interactive',<br>
+                          supervisor: 'Katrin',<br>
+                          livingStyleGuide: 'Haguenburger', 'Jen',<br>
+
+                team: function(){<br>
+                          return 'Fanxhe Team is : ' + this.students + ', ' + this.coaches + ', ' + this.crowdContact + ', ' + this.coachCompany + ', ' <br>
+                          + this.supervisor +  ' ' + this.livingStyleGuide + ' ^_^';<br>
+                }<br>
+
+          }
+
+      </code></pre>
+    </div>
+
+    <section id= 'post-area'>
+        <div id= 'title'>
+            <h2>{{ page.title }}</h2>
+            {{ page.date | date: "%b %-d, %Y" }}
+        </div>
+
+        <div id ='post'>
+            {{ content }}
+        </div>
+    </section>
+
+    {% include categories.html %}
+
+    <div id="Array">
+      <pre><code>
+          var students = ["Fany", "Anxhe"]<br>
+          var coaches = ["Tapia", "Nacho"];<br>
+          var crowdContact = "Vic";<br>
+          var coachCompany ="Crowd Interactive";<br>
+          var supervisor = "Katrin";<br>
+          var livingStyleGuide = ["Haguenburger", "Jen"];<br>
+
+          fanxheTeam = [students, coaches,crowdContact, coachCompany, supervisor, mentor, livingStyleGuide];<br>
+                    console.log('We are the FanxheTeam: ' + fanxheTeam + 'We participating in Rails Girls Summer of COde 2015.');<br>
+                            >We are the FanxheTeam: Fany, Anxhe, Tapia, Nacho, Vic, Crowd Interactive, Katrin, Haguenburguer.<br>
+                            We participating in Rails Girls Summer of Code 2015.
+      </code></pre>
+    </div>
+
+    {% include footer.html %}
+    
+  </body>
+</html>

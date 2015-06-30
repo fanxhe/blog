@@ -1,0 +1,42 @@
+<section id='categories'>
+
+  <div id="sidebar">TOPICS</div>
+
+  <ul>
+    {% for category in site.categories %}
+      <li>
+        <span class= 'vignette-colors'>&gt;</span>
+        <a href="#">{{ category[0] }}</a>
+      </li><br>
+    {% endfor %}
+    <!-- <li><span class='vignette-colors'>></span>Rails Girls Summer of Code</li><a href=''> <br> -->
+    <!-- <li><span class= 'vignette-colors'>></span> JavaScript</li> <a href=''> <br>
+    <li><span class= 'vignette-colors'>></span> Ruby</li> <a href=''> <br>
+    <li><span class= 'vignette-colors'>></span> HTML</li> <a href=''> <br>
+    <li><span class= 'vignette-colors'>></span> CSS & SASS</li> <a href=''> <br>
+    <li><span class= 'vignette-colors'>></span> Markdown</li> <a href=''> <br>
+    <li><span class= 'vignette-colors'>></span> Learning Process</li> <a href=''> -->
+  </ul>
+
+
+  <script type="text/javascript">
+    (function(){
+
+     var offset = $("#sidebar").offset();
+     console.log(offset);
+     var topPadding = 150;
+     $(window).scroll(function() {
+       if ($("#sidebar").height() < $(window).height() && $(window).scrollTop() > offset.top) {
+
+         $("#sidebar").stop().animate({
+             marginTop: $(window).scrollTop() - offset.top + topPadding
+           });
+       } else {
+         $("#sidebar").stop().animate({
+           marginTop: 0
+         });
+         };
+       });
+   })();
+  </script>
+</section>
