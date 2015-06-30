@@ -96,7 +96,7 @@ span.mayor{
 h2.titulo{
 	color:white;
 	text-shadow: -1px -1px 15px black;
-	font-size:25px;
+	font-size:22px;
 	font-family:'Oswald', sans-serif;
 	margin: 0px auto;
 	text-align:center;
@@ -106,7 +106,7 @@ h2.titulo{
 	color: black;
 	text-shadow: -1px 1px 0 white;
 	font-family:'Oswald', sans-serif;
-	font-size: 17px;
+	font-size: 14px;
 	margin:0;
 	text-align:center;
 }
@@ -118,7 +118,7 @@ h2.titulo{
 	height:100%;
 	background-color:#8FE5E5;
 	background-image:url(fondo_tres.png);
-	background-size:350px 350px;
+	background-size:380px 380px;
 	min-height:100%;
 }
 
@@ -127,8 +127,8 @@ h2.titulo{
 
 div.circle_about_me{
 	opacity: 0;
-	width:110px;
-	height:110px;
+	width:100px;
+	height:100px;
 	background-color:hsla(170, 30%, 40%, 0.6);
 	border-radius:50%;
 }
@@ -183,6 +183,8 @@ div#estudiantes{
 	width: 110px;
 	height: 110px;
 	border-radius:50%;
+	margin: 0 auto;
+	display: block;
 }
 .estudiante{
 	min-width:192px;
@@ -211,6 +213,9 @@ div#estudiantes{
 	width: 80px;
 	height: 80px;
 	border-radius:50%;
+	margin: 0 auto;
+	display: block;
+
 }
 .logos img:hover{
 	box-shadow: 5px 5px 10px #999;
