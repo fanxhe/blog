@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+	<head>
+	 	<meta charset='utf-8'>
+	 	<link href= 'view-article.css' rel="stylesheet"type= "text/css"/>
+	 	<link href='pagination-widget.css' rel="stylesheet" type = "text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Kotta+One|Alegreya+Sans|Source+Code+Pro|Courgette|Shadows+Into+Light+Two|Architects+Daughter' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+
+
+	 </head>
+
+
+	 <body>
+
+	 		<div id='menu'> <!-- Barra menú, se mantiene en posición superior -->
+
+		<!--Añade botones de Share-->
+
+				<section id='social-share'>
+
+				<div class="a2a_kit a2a_default_style">
+
+				<a class="a2a_button_facebook">
+					<img src="Facebook.svg" border="0" alt="Facebook" width="20" height="20"/>
+				</a>
+
+				<a class="a2a_button_twitter">
+					<img src="Twitter.svg" border="0" alt="Twitter" width="20" height="20"/>
+				</a>
+
+				<a class="a2a_button_google_plus">
+				<img src="GooglePlus.svg" border="0" alt="Google +" width="20" height="20"/>
+				</a>
+
+				</div>
+
+				<script type="text/javascript">
+				var a2a_config = a2a_config || {};
+				a2a_config.linkname = "Fanxhe Team";
+				a2a_config.linkurl = "http://fanxhe.herokuapp.com/";
+				a2a_config.num_services = 4;
+				a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+				</script>
+
+				<script type="text/javascript" src="//static.addtoany.com/menu/page.js">
+				</script>
+
+			</section>
+
+			
+			<nav id="contenido">
+					<ul>
+						<li class='menu'><a href="#Home">Home</a></li>
+						<li class='menu'><a href="#About">About</a></li>
+						<li class='menu'><a href="#Blog">Blog</a></li>
+						<li class='menu'><a href="#OurStyleGuide">Our Style Guide</a></li>
+					</ul>
+			</nav>
+
+		</div>
+
+
+	 		<div id='article-view'>
+
+	 		<pre><code>
+
+	 				var fanxheTeam = {<br>
+							students: 'Fany', 'Anxhe',<br>
+							coaches: 'Tapia', 'Nacho',<br>
+							crowdContact: 'Vic',<br>
+							coachCompany: 'Crowd Interactive',<br>
+							supervisor: 'Katrin',<br>
+							livingStyleGuide: 'Haguenburger', 'Jen',<br>
+	
+						team: function(){<br>
+							return 'Fanxhe Team is : ' + this.students + ', ' + this.coaches + ', ' + this.crowdContact + ', ' + this.coachCompany + ', ' <br>
+							+ this.supervisor +  ' ' + this.livingStyleGuide + ' ^_^';<br>
+						}<br>
+
+					}
+
+			</code></pre>
+
+	 		</div>
+
+	 		<section id= 'post-area'>
+
+	 				<div id= 'title'>
+	 						<h2> My New BlogPost</h2>
+	 				</div>
+
+
+	 				<div id ='post'
+	 						<p> When a company co-founder and CEO took the stage at a tech startup pitching contest in Silicon Valley recently, the last thing she had on her mind was her gender. Yet as she made her way to the stage to deliver a carefully practiced pitch for investment funding, not all the audience were applauding. Some were cat-calling.
+
+							She ignored the unwanted attention and concentrated on her pitch, but later reflected on the inappropriateness. “For these people it was just a little joke but why? It was a professional conference,” she says, declining to use her name for fear it might jeopardise future funding chances.</p>
+
+							<p>The incident is representative of a larger truth recognised by many women in Silicon Valley’s tech industry: sexist behaviour is alive and well. A long string of lawsuits alleging sexual harassment at tech startup companies and venture capital firms is currently making its way through the courts. And the sexist culture spills out in public, too. At last month’s annual Crunchies – the tech world’s closest thing to the Oscars – the presenter repeatedly called one woman in the audience a bitch and casually threw out a racist remark (the event’s hosts, the blog Techcrunch, apologised).</p>
+	 				</div>
+
+	 		</section>
+
+
+	 		<section id='categories'>
+
+	 				<div id="sidebar">TOPICS
+	 				</div>
+
+	 				<ul>
+	 					<li> <span class= 'vignette-colors'>></span> Living Style Guide</li> <a href=''> <br>
+
+	 					<li><span class= 'vignette-colors'>></span>Rails Girls Summer of Code</li> <a href=''> <br>
+
+	 					<li><span class= 'vignette-colors'>></span> JavaScript</li> <a href=''> <br>
+	 					<li><span class= 'vignette-colors'>></span> Ruby</li> <a href=''> <br>
+	 					<li><span class= 'vignette-colors'>></span> HTML</li> <a href=''> <br>
+	 					<li><span class= 'vignette-colors'>></span> CSS & SASS</li> <a href=''> <br>
+	 					<li><span class= 'vignette-colors'>></span> Markdown</li> <a href=''> <br>
+	 					<li><span class= 'vignette-colors'>></span> Learning Process</li> <a href=''>
+	 				</ul>
+	 		
+
+	 						<script type="text/javascript">
+	 					(function(){
+
+							var offset = $("#sidebar").offset();
+							console.log(offset);
+							var topPadding = 150;
+							$(window).scroll(function() {
+								if ($("#sidebar").height() < $(window).height() && $(window).scrollTop() > offset.top) {
+
+									$("#sidebar").stop().animate({
+											marginTop: $(window).scrollTop() - offset.top + topPadding
+										});
+								} else {
+									$("#sidebar").stop().animate({
+										marginTop: 0
+									});
+									};
+								});
+						})();
+						</script>
+
+	 		</section>
+
+	 		<!--<section class="archive-pages">
+
+    				<ul>
+
+					      <li class="first"><a href="#" title="first page">first page</a></li>
+
+					      <li class="previous"><a href="#" title="previous page">previous page</a></li>
+
+					      <li class="selected">1</li>
+					      <li><a href="#" title="Pagina 2">2</a></li>
+
+					      <li><a href="#" title="Pagina 3">3</a></li>
+
+					      <li><a href="#" title="Pagina 4">4</a></li>
+
+					      <li><a href="#" title="Pagina 5">5</a></li>
+
+					      <li class="next"><a href="#" title="next page">next page</a></li>
+
+					      <li class="last"><a href="#" title="last page">last page</a></li>
+
+   					 </ul>
+ 			</section>-->
+
+
+	 		<section id='Comments'>
+
+	 			<div id='comments-area'></div>
+
+	 		</section>
+
+	 		<div id= 'Array'> 
+
+	 		<pre><code>
+
+	 			var students = ["Fany", "Anxhe"]<br>
+				var coaches = ["Tapia", "Nacho"];<br>
+				var crowdContact = "Vic";<br>
+				var coachCompany ="Crowd Interactive";<br>
+				var supervisor = "Katrin";<br>
+				var livingStyleGuide = ["Haguenburger", "Jen"];<br>
+
+				fanxheTeam = [students, coaches,crowdContact, coachCompany, supervisor, mentor, livingStyleGuide];<br>
+					console.log('We are the FanxheTeam: ' + fanxheTeam + 'We participating in Rails Girls Summer of COde 2015.');<br>
+						>We are the FanxheTeam: Fany, Anxhe, Tapia, Nacho, Vic, Crowd Interactive, Katrin, Haguenburguer.<br>
+						We participating in Rails Girls Summer of Code 2015. 
+
+			</code></pre>
+
+			</div>
+
+	 	<footer>
+
+			<p>© Fanxhe Team</p>
+
+				<section id='follow'>
+
+					<!--Añade botones de follow-->
+
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-557bd06b62e04e14" async="async">
+					</script>
+
+				</section>
+
+		</footer>
+
+	 </body>
+
+</html>
