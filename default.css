@@ -1,0 +1,14 @@
+
+div#heade,#cover{
+  width:0;
+  height:0;
+}
+
+h1#fanxhe{
+  top:30px;
+}
+
+h2#descripcion{
+  margin-top:0;
+  margin-bottom:0;
+}

@@ -24,19 +24,19 @@ div#onepage-scroll{
 /*HOME*/
 
 div#header{
-	background:url(header.jpg) no-repeat fixed bottom center;
+	background:url(header.jpg) no-repeat fixed top center;
   background-size:cover;
 	width:100%;
-	height:375px;
+	height:500px;
 	display:block;
 	position:absolute;
 }
 
 div#cover{
-	background:url(hdr.jpg) no-repeat fixed bottom center;
+	background:url(hdr.jpg) no-repeat fixed top center;
   background-size:cover;
 	width:100%;
-	height:375px;
+	height:500px;
 	opacity:0;
 	display:block;
 	position:absolute;
@@ -51,7 +51,7 @@ h1#fanxhe{
 	color:white;
 	text-align:center;
 	position:relative;
-	top:325px;
+	top:406px;
 }
 
 	span#f{
@@ -68,7 +68,7 @@ h1#fanxhe{
 	}
 
 h2#description{
-	margin-top: 350px;
+	margin-top: 420px;
 	margin-bottom:120px;
 	font-size:25px;
 }
@@ -79,6 +79,11 @@ span.mayor{
 
 #description p{
 	text-shadow: 20px -1px 20px #46A1B6;
+	font-family:'Oswald', sans-serif;
+	font-size: 20px;
+	margin:0;
+	text-align:center;
+
 }
 
 #description a{
