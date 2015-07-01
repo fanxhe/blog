@@ -88,16 +88,17 @@ span.mayor{
 /*BLOQUE2*/
 
 /*Letras bloque2 (titulo y nombres)*/
+
 #titulo-estudiantes {
-		padding-top: 70px;
+		padding-top: 30px;
 }
 
 h2.titulo{
 	color:white;
 	text-shadow: -1px -1px 15px black;
-	font-size:25px;
+	font-size:22px;
 	font-family:'Oswald', sans-serif;
-	margin: 0px 16px 12px auto;
+	margin: 0px auto;
 	text-align:center;
 }
 
@@ -105,7 +106,7 @@ h2.titulo{
 	color: black;
 	text-shadow: -1px 1px 0 white;
 	font-family:'Oswald', sans-serif;
-	font-size: 17px;
+	font-size: 14px;
 	margin:0;
 	text-align:center;
 }
@@ -117,7 +118,7 @@ h2.titulo{
 	height:100%;
 	background-color:#8FE5E5;
 	background-image:url(fondo_tres.png);
-	background-size:350px 350px;
+	background-size:330px 330px;
 	min-height:100%;
 }
 
@@ -126,8 +127,8 @@ h2.titulo{
 
 div.circle_about_me{
 	opacity: 0;
-	width:110px;
-	height:110px;
+	width:100px;
+	height:100px;
 	background-color:hsla(170, 30%, 40%, 0.6);
 	border-radius:50%;
 }
@@ -179,9 +180,11 @@ div#estudiantes{
 }
 #estudiantes img{
 	padding: 15px;
-	width: 130px;
-	height: 130px;
+	width: 110px;
+	height: 110px;
 	border-radius:50%;
+	margin: 0 auto;
+	display: block;
 }
 .estudiante{
 	min-width:192px;
@@ -193,22 +196,26 @@ div#estudiantes{
 	justify-content:space-around;
 	flex-wrap:wrap;
 }
+
 .half-block{
 	min-width:420px;
-	min-height:30%;
+	min-height:185px;
 }
 
 .block{
 	min-width:141px;
-	min-height:30%;
+	min-height:185px;
 	flex-shrink:5;
 }
 
 .logos img{
 	padding:10px;
-	width: 90px;
-	height:90px;
+	width: 80px;
+	height: 80px;
 	border-radius:50%;
+	margin: 0 auto;
+	display: block;
+
 }
 .logos img:hover{
 	box-shadow: 5px 5px 10px #999;
@@ -224,6 +231,7 @@ div#coachcompany{
 }
 .block-crowd{
 	min-width: 266px;
+	min-height: 200px;
 }
 
 #menu{
