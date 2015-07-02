@@ -130,7 +130,7 @@ ul,li{
 
  /*Area de blog posts*/
 
- #post-area {
+ .post-area {
  	color: #000;
  	display: block;
  	height: 700px;
@@ -140,16 +140,16 @@ ul,li{
 
  }
 
- #title {
+ .title {
  	color: #226764;
-    font-family: 'Architects Daughter', cursive;
+  font-family: 'Architects Daughter', cursive;
  	font-size: 30px;
  	font-weight: bold;
  	margin-bottom: 70px;
  	text-align: center;
  }
 
- #post{
+ .post{
  	color: #000;
 	font-family: 'Alegreya Sans', sans-serif;
  	font-size: 20px;
@@ -158,15 +158,40 @@ ul,li{
  	text-align: left;
  }
 
+/*css lista de articulo */
+.last-post{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+#section-resume{
+	height:200px;
+}
+
+.title-article{
+	color: #000;
+	font-size: 20px;
+	text-align:left;
+}
+
+hr{
+	border-style: dashed;
+	color: #7290D5;
+}
+
 /*Categorías*/
 
- #categories{
+ .categories{
  	bottom: 610px;
  	float: right;
  	height: 200px;
  	position: relative;
  	right: 70px;
  	width: 250px;
+}
+
+.cat-list{
+	bottom:815px;
 }
 
  #sidebar{
@@ -180,7 +205,7 @@ ul,li{
  	width: 200px;
  }
 
- #categories li{
+ .categories li{
 
  	color: #0D1B1B;
 	font-family: 'Alegreya Sans', sans-serif;
@@ -191,11 +216,11 @@ ul,li{
 span.vignette-colors{
 	color: #009BCD;
 }
- #categories li:hover{
+ .categories li:hover{
  	color: #FFF;
  }
 
-#categories li a:visited{
+.categories li a:visited{
  	color: gray;
  }
 
