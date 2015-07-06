@@ -42,6 +42,8 @@ div#cover{
 	position:absolute;
 }
 
+/*TITULO PRINCIPAL*/
+
 h1#fanxhe{
 	width: 400px;
 	margin: 0 auto;
@@ -67,6 +69,8 @@ h1#fanxhe{
 	 	color:#189CCB;
 	}
 
+/*TITULO PRINCIPAL 2 , DESCRIPCIÓN DEL ENCABEZADO. */
+
 h2#description{
 	margin-top: 420px;
 	margin-bottom:120px;
@@ -89,6 +93,7 @@ span.mayor{
 #description a{
 	color:black;
 }
+
 
 /*BLOQUE2*/
 
@@ -116,7 +121,7 @@ h2.titulo{
 	text-align:center;
 }
 
-/*Fondo del bloque 1 y 2*/
+/*Fondo de HOME Y bloque2*/
 
 #home,#bloque2{
 	width:100%;
@@ -146,15 +151,15 @@ div.circle_about_me ul {
 div.circle_about_me ul > .git-right{
 	position: relative;
 	left: -4%;
-  	top: 14%;
-  	width: 50%;
+  top: 14%;
+  width: 50%;
 
 }
 div.circle_about_me ul > .git-left{
 	position: relative;
 	right: -21%;
-  	top: 14%;
-  	width: 50%;
+  top: 14%;
+  width: 50%;
 
 }
 div.circle_about_me ul > .tweet-right{
@@ -192,7 +197,6 @@ li.menu_about a{
 }
 
 #estudiantes li img{
-
 	height: 32px;
 	margin-left: 10px;
 	margin-top: -20px;
@@ -201,7 +205,7 @@ li.menu_about a{
 
 li.fanny{
 	margin-left: -30px;
-} 
+}
 
 
 a.hover_about,a.hover_about:visited{
@@ -215,13 +219,8 @@ a.hover_about:hover{
 	color:#57003f;
 }
 
-/*Bloque2, flex pagina */
-
-div#estudiantes{
-	display:flex;
-	justify-content:center;
-	/*min-height:30%;*/
-}
+/*AVATARS BLOQUE 2
+=================*/
 #estudiantes img{
 	padding: 15px;
 	width: 110px;
@@ -233,23 +232,6 @@ div#estudiantes{
 .estudiante{
 	min-width:192px;
 	z-index:1;
-}
-
-.center{
-	display:flex;
-	justify-content:space-around;
-	flex-wrap:wrap;
-}
-
-.half-block{
-	min-width:420px;
-	min-height:185px;
-}
-
-.block{
-	min-width:141px;
-	min-height:185px;
-	flex-shrink:5;
 }
 
 .logos img{
@@ -265,6 +247,34 @@ div#estudiantes{
 	box-shadow: 5px 5px 10px #999;
 	width: 100px;
 	height: 100px;
+}
+
+/*DISTRIBUCIÓN DEL BLOQUE DOS DE LA PÁGINA.
+========================================= */
+
+/*Posición de avatares estudiantes. */
+div#estudiantes{
+	display:flex;
+	justify-content:center;
+}
+
+/*Posicion de avatares en el centro.*/
+.center{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+
+/*Medidas de los bloques duales. */
+.half-block{
+	min-width:420px;
+	min-height:185px;
+}
+
+/*Medidas de los bloques individuales del centro*/
+.block{
+	min-width:141px;
+	min-height:185px;
 }
 
 
