@@ -159,21 +159,34 @@ ul,li{
  }
 
 /*css lista de articulo */
+
 #cover{
-	background:url(hdr.jpg) no-repeat top center;
-	background-size:cover;
+	/*background: -webkit-linear-gradient(top, azure, aliceblue, lightcyan, lightblue, paleturquoise, mediumturquoise, turquoise, lightskyblue);*/
+	background-size:100% 100%;
 	position:relative;
 	display:block;
-	opacity:0.5;
+	opacity:0.2;
 	width:100%;
 	top: 50px;
+
 }
+
 #header{
+
   position:absolute;
 	display:block;
-	width:100%;
+	width:80%;
+	height:100px;
 	top:50px;
 }
+
+/*#bloque{
+
+	bottom: 50px;
+	height:100%;
+	width:100%;
+}*/
+
 #text{
 		margin-left: 103px;
 }
@@ -202,6 +215,7 @@ hr{
 	margin-left: 103px;
 	margin-top:100px;
 	width: 800px;
+	border-bottom-color:shadow(lightskyblue);
 }
 
 .article-details{
