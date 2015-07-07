@@ -1,6 +1,8 @@
-use Rack::Static, urls: ["/"], root: ".", index: "index.html"
+use Rack::Auth::Basic, "Restricted" do |username, password|
+  [username, password] == [ENV["USERNAME"], ENV["PASSWORD"]]
+end if ENV["TEST"]
 
-  # :root => "public"
+use Rack::Static, urls: ["/"], root: ".", index: "_site/index.html"
 
 run lambda { |env|
   [
@@ -9,6 +11,6 @@ run lambda { |env|
       'Content-Type'  => 'text/html',
       'Cache-Control' => 'public, max-age=86400'
     },
-    File.open('index.html', File::RDONLY)
+    File.open('_site/index.html', File::RDONLY)
   ]
 }

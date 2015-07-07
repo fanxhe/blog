@@ -1,345 +1,267 @@
-<!doctype html>
-<html>
-	<head>
-	 	<meta charset='utf-8'>
-		<link href="blog3.css" rel="stylesheet"type= "text/css"/>
-		<link href="social-share.css" rel="stylesheet"type= "text/css"/>
-		<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-		<link href="jquery.fullPage.css" type="text/css" rel="stylesheet"/>
-		<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
-		<script type="text/javascript" src="jquery.fullPage.min.js"></script>
-		<script type="text/javascript" src="efectos.js"></script>
-	</head>
+---
+layout: default
+---
+<div id="fullpage">
 
-	<!--Implementa Google Analytics a nuestro blog-->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<div id="home" class="section">
+		<div id="header"></div>
+		<div id="cover"></div>
 
-	  ga('create', 'UA-64309712-1', 'auto');
-	  ga('send', 'pageview');
+		<h1 id="fanxhe"><span id="f">f</span>an<span id="x">x</span>he <span id="t">T</span>eam</h1>
 
-	</script>
+		<h2 id= "description">
+			<p><span class="mayor">Welcome to our blog, </span>We're participating in Rails Girls Summer of code  2015 ,during this summer we'll be working<br>
+				in the open source project Living Style Guide.<br>
+				Thanks<span class="mayor"><span class="logo-inline"><a href="http://railsgirls.com/">Rails Girls <img src= "/img/rg.png"></a></span></span>
+				<span class="mayor"><br>
+					Great things are expecting for us this summer</span><br>
+				</p>
+		</h2>
+	</div>
 
-	<body>
-
-		<div id='menu'> <!-- Barra menú, se mantiene en posición superior -->
-
-		<!--Añade botones de Share-->
-			<section id='social-share'>
-
-				<div class="a2a_kit a2a_default_style">
-
-				<a class="a2a_button_facebook">
-					<img src="Facebook.svg" border="0" alt="Facebook" width="20" height="20"/>
-				</a>
-				<a class="a2a_button_twitter">
-					<img src="twitter_a.svg" border="0" alt="Twitter" width="20" height="20"/>
-				</a>
-				<a class="a2a_button_google_plus">
-				<img src="GooglePlus.svg" border="0" alt="Google +" width="20" height="20"/>
-				</a>
-				</div>
-
-				<script type="text/javascript">
-				var a2a_config = a2a_config || {};
-				a2a_config.linkname = "Fanxhe Team";
-				a2a_config.linkurl = "http://fanxhe.herokuapp.com/";
-				a2a_config.num_services = 4;
-				a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
-				</script>
-				<script type="text/javascript" src="https://static.addtoany.com/menu/page.js">
-				</script>
-			</section>
-
-			<nav id="contenido">
+	<div id="bloque2" class="section">
+		<h2 id="titulo-estudiantes" class="titulo">Students</h2>
+		<div id="estudiantes">
+			<div class="circle_about_me" id="Anye">
 				<ul>
-					<li class='menu'><a href="#home">Home</a><li>
-					<li class='menu'><a href="#about">About</a></li>
-					<li class='menu'><a href="#blog">Blog</a></li>
-					<li class='menu'><a href="#ourstyleguide">Our Style Guide</a></li>
+					<li class="menu_about git-left">
+						<a href="https://github.com/anxhe"> <img src="/img/github.svg"></a>
+					</li>
+					<li class="menu_about tweet-left">
+						<a href="https://.com/anxyhe?lang=es"> <img src= "/img/twitter.svg"> </a>
+					</li>
 				</ul>
-			</nav>
-		</div>
-
-		<div id="fullpage">
-
-			<div id='home' class="section">
-					<div id='header'>
-					</div>
-					<div id='cover'>
-					</div>
-					<h1 id="fanxhe"><span id="f">f</span>an<span id="x">x</span>he <span id="t">T</span>eam</h1>
-
-					<h2 id= "description">
-						<p><span class="mayor">Welcome to our blog, </span>We're participating in Rails Girls Summer of code  2015 ,during this summer we'll be working<br>
-					 	in the open source project Living Style Guide.<br>
-						Thanks<span class="mayor"><span class="logo-inline"><a href="http://railsgirls.com/">Rails Girls <img src= "rg.png"></a></span></span>
-						<span class="mayor"><br>
-						Great things are expecting for us this summer</span><br>
-						</p>
-					</h2>
 			</div>
 
-			<div id='bloque2' class='section'>
+			<div class="nombres estudiante">
+				<img src="/img/anyelina.jpg">
+				<p>Anyelina Moreno</p>
+				<p>Robledo</p>
+			</div>
 
-					<h2 id="titulo-estudiantes" class="titulo">Students</h2>
-					<div id="estudiantes">
-						<div class="circle_about_me" id='Anye'>
-							<ul>
-								<li class="menu_about git-left">
-									<a href='https://github.com/anxhe'> <img src="github.svg"></a>
-								</li>
-								<li class="menu_about tweet-left">
-									<a href="https://twitter.com/anxyhe?lang=es"> <img src= "twitter.svg"> </a>
-								</li>
-							</ul>
-						</div>
+			<div class="nombres estudiante">
+				<img src="/img/fany.jpeg">
+				<p>Estefania Cano</p>
+				<p> Sáiz</p>
+			</div>
 
-						<div class="nombres estudiante">
-							<img src="anyelina.jpg">
-							<p>Anyelina Moreno</p>
-							<p>Robledo</p>
-						</div>
+			<div class="circle_about_me" id="Fanny">
+				<ul>
+					<li class="menu_about git-right">
+						<a href="https://github.com/freewomancode"> <img src="/img/github.svg"> </a>
+					</li>
+					<li class="menu_about tweet-right">
+						<a href="https://.com/steffiSaiz?lang=es"> <img src= "/img/twitter.svg"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-					  <div class="nombres estudiante">
-							<img src="fany.jpeg">
-							<p>Estefania Cano</p>
-							<p> Sáiz</p>
-						</div>
+		<div class="center">
+			<div class="half-block">
+				<h2 class="titulo">Coaches</h2>
+				<div class="logos center">
 
-						<div class="circle_about_me" id='Fanny'>
-							<ul>
-								<li class="menu_about git-right">
-									<a href="https://github.com/freewomancode"> <img src="github.svg"> </a>
-								</li>
-								<li class="menu_about tweet-right">
-									<a href="https://twitter.com/steffiSaiz?lang=es"> <img src= "twitter.svg"></a>
-								</li>
-							</ul>
-						</div>
+					<div class="nombres block">
+						<a href="https://github.com/joiggama"><img src="/img/ignacio.jpeg"></a>
+						<p>Ignacio Galindo</p>
+						<!-- <p>Martinez</p> -->
 					</div>
 
-					<div class="center">
-						<div class="half-block">
-							<h2 class="titulo">Coaches</h2>
-							<div class='logos center'>
-
-							<div class='nombres block'>
-									<a href='https://github.com/joiggama'><img src="ignacio.jpeg"></a>
-									<p>Ignacio Galindo</p>
-									<!-- <p>Martinez</p> -->
-							</div>
-
-							<div class="block nombres">
-									<a href="https://github.com/jtapia"><img src="tapia.png"></a>
-									<p>Jonathan Tapia</p>
-							</div>
-						</div>
+					<div class="block nombres">
+						<a href="https://github.com/jtapia"><img src="/img/tapia.png"></a>
+						<p>Jonathan Tapia</p>
 					</div>
+				</div>
+			</div>
 
-					<div class="block">
-						<h2 class="titulo">Supervisor</h2>
-						<div  class='logos'>
-							<div class='nombres'>
-								<a href="https://github.com/katrin-k"><img src="Katrin-k.jpeg"></a>
-								<p>Katrin Kampfrath</p>
-							</div>
-						</div>
+			<div class="block">
+				<h2 class="titulo">Supervisor</h2>
+				<div  class="logos">
+					<div class="nombres">
+						<a href="https://github.com/katrin-k"><img src="/img/katrin-k.jpeg"></a>
+						<p>Katrin Kampfrath</p>
 					</div>
-					<div class="half-block center">
-						<div class="block">
-							<h2 class="titulo">Mentor</h2>
-							<div  class='logos'>
-								<div class='nombres'>
-									<a href="https://github.com/hagenburger"><img src="hagenburger.jpeg"></a>
-									<p>Nico Hagenburger</p>
-								</div>
-							</div>
-						</div>
-						<div class="block">
-							<h2 class="titulo">Project</h2>
-							<div class='logos'>
-								<div class='nombres'>
-									<a href="http://livingstyleguide.org/"><img src="lsg.png"></a>
-									<p>Living Style Guide</p>
-								</div>
-							</div>
-						</div>
-						<div class="block">
-							<h2 class="titulo">M.Content Chief</h2>
-							<div  class='logos'>
-								<div class='nombres'>
-									<a href="https://github.com/anomiseditrix"><img src="jen.jpeg"></a>
-									<p>Jen Geacone-Cruz</p>
-								</div>
-							</div>
+				</div>
+			</div>
+			<div class="half-block center">
+				<div class="block">
+					<h2 class="titulo">Mentor</h2>
+					<div  class="logos">
+						<div class="nombres">
+							<a href="https://github.com/hagenburger"><img src="/img/hagenburger.jpeg"></a>
+							<p>Nico Hagenburger</p>
 						</div>
 					</div>
 				</div>
-
-				<div id="coachcompany" class="logos">
-					  <div class="nombres block-crowd">
-					    	<h2 class="titulo">
-					    		Coaching
-					    		Company
-					    	</h2>
-							<a href='http://www.crowdint.com/'><img id="Crowd"src="crowd.png"></a>
-							<p>Crowd Interactive</p>
+				<div class="block">
+					<h2 class="titulo">Project</h2>
+					<div class="logos">
+						<div class="nombres">
+							<a href="http://livingstyleguide.org/"><img src="/img/lsg.png"></a>
+							<p>Living Style Guide</p>
 						</div>
-
-						<div class="nombres block-crowd block">
-							<h2 class="titulo">Representative</h2>
-							<a href='https://github.com/vicmaster'><img id="Crowd"src="Victor.jpeg"></a>
-							<p>Victor Velazquez</p>
-							<p>Gaspar</p>
-						</div>
+					</div>
 				</div>
+				<div class="block">
+					<h2 class="titulo">M.Content Chief</h2>
+					<div  class="logos">
+						<div class="nombres">
+							<a href="https://github.com/anomiseditrix"><img src="/img/jen.jpeg"></a>
+							<p>Jen Geacone-Cruz</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div id="coachcompany" class="logos">
+			<div class="nombres block-crowd">
+				<h2 class="titulo">
+					Coaching
+					Company
+				</h2>
+				<a href="http://www.crowdint.com/"><img id="Crowd" src="/img/crowd.png"></a>
+				<p>Crowd Interactive</p>
 			</div>
 
-			<div class="section">
-					<div id="about1" class="slide" data-anchor="rails-girls">
-						<div  id="fondo_about1">
+			<div class="nombres block-crowd block">
+				<h2 class="titulo">Representative</h2>
+				<a href="https://github.com/vicmaster"><img id="Crowd" src="/img/victor.jpeg"></a>
+				<p>Victor Velazquez</p>
+				<p>Gaspar</p>
+			</div>
+		</div>
 
-							<div class="rectangulo rectangulo1">
-								<div class="rectangulo rectangulo2">
-								</div>
-							</div>
-							<div class="about_project">
-									<h1 class="titulo_about">What is Rails Girls Summer of Code?<span class="logo-inline"><a href="http://railsgirlssummerofcode.org/"><img src= "rg.png"></a></span></h1>
-									<p class="titulo_about contenido_about">
-										Rails Girls is an organization aiming to give tools and a community for<br>
-										women to understand technology and to build their ideas. Each year,<br>
-										they organize a Summer of Code where participants can contribute to <br>
-										existing open source projects supported by coaches, the project owners <br>
-										as mentors, and of course core members of the organization.<br>
-									</p>
-							</div>
-						</div>
+	</div>
+
+	<div class="section">
+		<div id="about1" class="slide" data-anchor="rails-girls">
+			<div  id="fondo_about1">
+
+				<div class="rectangulo rectangulo1">
+					<div class="rectangulo rectangulo2">
 					</div>
-					<div id="about2" class="slide" data-anchor="who-are-we">
+				</div>
+				<div class="about_project">
+					<h1 class="titulo_about">What is Rails Girls Summer of Code?<span class="logo-inline"><a href="http://railsgirlssummerofcode.org/"><img src= "/img/rg.png"></a></span></h1>
+					<p class="titulo_about contenido_about">
+						Rails Girls is an organization aiming to give tools and a community for<br>
+						women to understand technology and to build their ideas. Each year,<br>
+						they organize a Summer of Code where participants can contribute to <br>
+						existing open source projects supported by coaches, the project owners <br>
+						as mentors, and of course core members of the organization.<br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="about2" class="slide" data-anchor="who-are-we">
 
-							<div id="fondo_about2">
-							</div>
-						 	<div class="rectangulo rectangulo1">
-								<div class="rectangulo rectangulo2">
-								</div>
-							</div>
-							<div class="about_project">
-									<h1 class="titulo_about"> Who are we?</h1>
-									<p class="titulo_about contenido_about">
-										We are two spanish girls currently living in Colima, Mexico. We both<br>
-										have studied Social Work in different cities back in Spain. We came to <br>
-										Colima for an internship and that’s how we met. We fell in love of the City.<br>
-										We have been collaborating  in different social projects. Now, we<br>
-										are just about to kickoff the next one, we will be participating in this<br>
-										year’s Rails Girls Summer of Code<br>
-										<br>
-									</p>
-							</div>
-
-					</div>
-					<div id="about3" class="slide" data-anchor="into-programming-world">
-							<div id="fondo_about3">
-							</div>
-							<div class="rectangulo rectangulo1">
-								<div class="rectangulo rectangulo2">
-								</div>
-							</div>
-							<div class="about_project">
-									<h1 class="titulo_about"> But...how have we ended into the programming world?</h1>
-									<p class="titulo_about contenido_about">
-										Over a year ago, we were invited to attend a workshop by a local<br>
-										community named Codificadas now part of <a href="https://www.womenwhocode.com/">Women Who Code</a> ,we have <br>
-										found this initiative very interesting. Short after we attended a few <br>
-										workshops, we started to think all day about programming,<br>
-										programming and more programming, soon we wanted to know more.<br>
-										We thank <a>Codificadas</a>,they have awakened our love for the<br>
-										programming world.<br>
-									</p>
-							</div>
-
-					</div>
-
-
-					<div id="about4" class="slide" data-anchor="project">
-
-							<div id="fondo_about4">
-							</div>
-							<div class="rectangulo rectangulo1">
-								<div class="rectangulo rectangulo2">
-								</div>
-							</div>
-							<div class="about_project">
-									<h1 class="titulo_about">What will we do?</h1>
-							    <p class="titulo_about contenido_about">
-										We will be working in the open source project <a href="http://livingstyleguide.org/"> Living Style Guide</a>,<br>
-										mentored by <a href="http://www.hagenburger.net/">Nico Hagenburger</a> and <a href="http://geaconecruz.net/">Jennifer Geacone-Cruz</a>. Living Style<br>
-										Guide allows us to generate HTML style guides using SASS and<br>
-										Markdown.<br>
-									</p>
-							</div>
-
-					</div>
-
-					<div id="about5" class="slide" data-anchor='team'>
-
-							<div id="fondo_about5">
-							</div>
-							<div class="rectangulo rectangulo1">
-								<div class="rectangulo rectangulo2">
-								</div>
-							</div>
-							<div class="about_project">
-									<h1 class="titulo_about">Our team</h1>
-									<p class="titulo_about contenido_about">
-										Our team will start working from July 1st until the end of September <br>
-										from <a href="http://geaconecruz.net/">Crowd Interactive’s office</a>, they have opened its doors to us and<br>
-										offered the talent of its programmers. During this journey <a href="https://github.com/vicmaster">Victor <br>
-										Velazquez</a> will be our contact at Crowd Interactive, <a href="https://github.com/joiggama">Ignacio Galindo</a> and <br>
-										<a href="https://github.com/jtapi">Jonathan Tapia</a> will be our coaches, and <a href="https://github.com/katrin-k">Katrin Kampfrath</a>spa from Rails <br>
-										Girls Summer of Code will be our supervisor.<br>
-									</p>
-							</div>
-
-					</div>
-
-					<div id="about6" class="slide" data-anchor="blog">
-
-							<div id="fondo_about6">
-							</div>
-							<div class="rectangulo rectangulo1">
-								<div class="rectangulo rectangulo2">
-								</div>
-							</div>
-							<div class="about_project">
-									<h1 class="titulo_about">What can you find here?</h1>
-									<p class="titulo_about contenido_about">
-										In this blog we want to share our learning process: how we started, the<br>
-										tasks we are going to do and what we learn while doing them, the new<br>
-										things we discover, how we feel about our learning process, the support<br>
-										we receive from the team: coaches, coaching company, mentors,<br>
-										supervisor, and of course, Rails Girls; and how we came to the end of <br>
-										of the summer of code.<br>
-										<br>
-										This is the Fanxhe Team<br>
-										<br>
-										Welcome!<br>
-									</p>
-							</div>
-					</div>
+			<div id="fondo_about2">
+			</div>
+			<div class="rectangulo rectangulo1">
+				<div class="rectangulo rectangulo2">
+				</div>
+			</div>
+			<div class="about_project">
+				<h1 class="titulo_about"> Who are we?</h1>
+				<p class="titulo_about contenido_about">
+					We are two spanish girls currently living in Colima, Mexico. We both<br>
+					have studied Social Work in different cities back in Spain. We came to <br>
+					Colima for an internship and that’s how we met. We fell in love of the City.<br>
+					We have been collaborating  in different social projects. Now, we<br>
+					are just about to kickoff the next one, we will be participating in this<br>
+					year’s Rails Girls Summer of Code<br>
+					<br>
+				</p>
 			</div>
 
 		</div>
-		<footer>
-			<p>© Fanxhe Team</p>
-			<section id='follow'>
-				<!-- Añade botones de follow -->
-			  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-557bd06b62e04e14" async="async"></script> -->
-			</section>
-		</footer>
-	</body>
-</html>
+		<div id="about3" class="slide" data-anchor="into-programming-world">
+			<div id="fondo_about3">
+			</div>
+			<div class="rectangulo rectangulo1">
+				<div class="rectangulo rectangulo2">
+				</div>
+			</div>
+			<div class="about_project">
+				<h1 class="titulo_about"> But...how have we ended into the programming world?</h1>
+				<p class="titulo_about contenido_about">
+					Over a year ago, we were invited to attend a workshop by a local<br>
+					community named Codificadas now part of <a href="https://www.womenwhocode.com/">Women Who Code</a> ,we have <br>
+					found this initiative very interesting. Short after we attended a few <br>
+					workshops, we started to think all day about programming,<br>
+					programming and more programming, soon we wanted to know more.<br>
+					We thank <a>Codificadas</a>,they have awakened our love for the<br>
+					programming world.<br>
+				</p>
+			</div>
+
+		</div>
+
+
+		<div id="about4" class="slide" data-anchor="project">
+
+			<div id="fondo_about4">
+			</div>
+			<div class="rectangulo rectangulo1">
+				<div class="rectangulo rectangulo2">
+				</div>
+			</div>
+			<div class="about_project">
+				<h1 class="titulo_about">What will we do?</h1>
+				<p class="titulo_about contenido_about">
+					We will be working in the open source project <a href="http://livingstyleguide.org/"> Living Style Guide</a>,<br>
+					mentored by <a href="http://www.hagenburger.net/">Nico Hagenburger</a> and <a href="http://geaconecruz.net/">Jennifer Geacone-Cruz</a>. Living Style<br>
+					Guide allows us to generate HTML style guides using SASS and<br>
+					Markdown.<br>
+				</p>
+			</div>
+
+		</div>
+
+		<div id="about5" class="slide" data-anchor="team">
+
+			<div id="fondo_about5"></div>
+
+			<div class="rectangulo rectangulo1">
+				<div class="rectangulo rectangulo2"></div>
+			</div>
+			<div class="about_project">
+				<h1 class="titulo_about">Our team</h1>
+				<p class="titulo_about contenido_about">
+					Our team will start working from July 1st until the end of September <br>
+					from <a href="http://geaconecruz.net/">Crowd Interactive’s office</a>, they have opened its doors to us and<br>
+					offered the talent of its programmers. During this journey <a href="https://github.com/vicmaster">Victor <br>
+						Velazquez</a> will be our contact at Crowd Interactive, <a href="https://github.com/joiggama">Ignacio Galindo</a> and <br>
+						<a href="https://github.com/jtapi">Jonathan Tapia</a> will be our coaches, and <a href="https://github.com/katrin-k">Katrin Kampfrath</a>spa from Rails <br>
+						Girls Summer of Code will be our supervisor.<br>
+					</p>
+			</div>
+		</div>
+
+		<div id="about6" class="slide" data-anchor="blog">
+
+			<div id="fondo_about6"></div>
+
+			<div class="rectangulo rectangulo1">
+				<div class="rectangulo rectangulo2"></div>
+			</div>
+			<div class="about_project">
+				<h1 class="titulo_about">What can you find here?</h1>
+				<p class="titulo_about contenido_about">
+					In this blog we want to share our learning process: how we started, the<br>
+					tasks we are going to do and what we learn while doing them, the new<br>
+					things we discover, how we feel about our learning process, the support<br>
+					we receive from the team: coaches, coaching company, mentors,<br>
+					supervisor, and of course, Rails Girls; and how we came to the end of <br>
+					of the summer of code.<br>
+					<br>
+					This is the Fanxhe Team<br>
+					<br>
+					Welcome!<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
