@@ -1,6 +1,4 @@
-
 source "https://rubygems.org"
 
-gem "rack"
-
-gem "jekyll"
+gem "jekyll", "2.5.3"
+gem "rack",   "1.6.4"
