@@ -130,7 +130,7 @@ ul,li{
 
  /*Area de blog posts*/
 
- #post-area {
+ .post-area {
  	color: #000;
  	display: block;
  	height: 700px;
@@ -140,16 +140,16 @@ ul,li{
 
  }
 
- #title {
+ .title {
  	color: #226764;
-    font-family: 'Architects Daughter', cursive;
+  font-family: 'Architects Daughter', cursive;
  	font-size: 30px;
  	font-weight: bold;
  	margin-bottom: 70px;
  	text-align: center;
  }
 
- #post{
+ .post{
  	color: #000;
 	font-family: 'Alegreya Sans', sans-serif;
  	font-size: 20px;
@@ -158,9 +158,82 @@ ul,li{
  	text-align: left;
  }
 
+/*css lista de articulo */
+
+#cover{
+	/*background: -webkit-linear-gradient(top, azure, aliceblue, lightcyan, lightblue, paleturquoise, mediumturquoise, turquoise, lightskyblue);*/
+	background-size:100% 100%;
+	position:relative;
+	display:block;
+	opacity:0.2;
+	width:100%;
+	top: 50px;
+
+}
+
+#header{
+
+  position:absolute;
+	display:block;
+	width:80%;
+	height:100px;
+	top:50px;
+}
+
+/*#bloque{
+
+	bottom: 50px;
+	height:100%;
+	width:100%;
+}*/
+
+#text{
+		margin-left: 103px;
+}
+
+.section-resume{
+	height:400px;
+}
+
+#title-header{
+	top:80px;
+	color: #189CCB;
+}
+
+.title-article{
+	color: #000;
+	font-size: 20px;
+	text-align:left;
+}
+
+hr{
+	border-style: dashed;
+	color: #009BCD;
+}
+
+.list{
+	margin-left: 103px;
+	margin-top:100px;
+	width: 800px;
+	border-bottom-color:shadow(lightskyblue);
+}
+
+.article-details{
+	color: #009BCD;
+	font-size:16px;
+	font-weight: normal;
+}
+a ,a:visited {
+	text-decoration:none;
+	color:inherit;
+}
+a:hover{
+	color: #FFF;
+}
+
 /*Categorías*/
 
- #categories{
+ .categories{
  	bottom: 610px;
  	float: right;
  	height: 200px;
@@ -168,6 +241,7 @@ ul,li{
  	right: 70px;
  	width: 250px;
 }
+
 
  #sidebar{
 
@@ -180,7 +254,7 @@ ul,li{
  	width: 200px;
  }
 
- #categories li{
+ .categories li{
 
  	color: #0D1B1B;
 	font-family: 'Alegreya Sans', sans-serif;
@@ -191,11 +265,11 @@ ul,li{
 span.vignette-colors{
 	color: #009BCD;
 }
- #categories li:hover{
+ .categories li:hover{
  	color: #FFF;
  }
 
-#categories li a:visited{
+.categories li a:visited{
  	color: gray;
  }
 
