@@ -24,7 +24,7 @@ div#onepage-scroll{
 /*HOME*/
 
 div#header{
-	background:url(header.jpg) no-repeat fixed top center;
+	background:url(../img/header.jpg) no-repeat fixed top center;
   background-size:cover;
 	width:100%;
 	height:500px;
@@ -33,7 +33,7 @@ div#header{
 }
 
 div#cover{
-	background:url(hdr.jpg) no-repeat fixed top center;
+	background:url(../img/hdr.jpg) no-repeat fixed top center;
   background-size:cover;
 	width:100%;
 	height:500px;
@@ -122,7 +122,7 @@ h2.titulo{
 	width:100%;
 	height:100%;
 	background-color:#8FE5E5;
-	background-image:url(fondo_tres.png);
+	background-image:url(../img/fondo_tres.png);
 	background-size:330px 330px;
 	min-height:100%;
 }
@@ -201,7 +201,7 @@ li.menu_about a{
 
 li.fanny{
 	margin-left: -30px;
-} 
+}
 
 
 a.hover_about,a.hover_about:visited{
@@ -425,7 +425,7 @@ div.rectangulo{
 	width:100%;
 	height:100%;
 	opacity: 0;
-	background:url(rectangulo.png) no-repeat;
+	background:url(../img/rectangulo.png) no-repeat;
 	background-size:100% 100%;
   position:relative;
 }
@@ -502,7 +502,7 @@ footer{
   font-family:'Shadows Into Light';
   font-style: normal;
   font-weight: 400;
-  src: local('Shadows Into Light'), local('ShadowsIntoLight'),url(shadows.woff2) format('woff2');
+  src: local('Shadows Into Light'), local('ShadowsIntoLight'),url(../fonts/shadows.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -510,7 +510,7 @@ footer{
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(oswald.woff2) format('woff2');
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/oswald.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -518,6 +518,6 @@ footer{
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(oswald2.woff2) format('woff2');
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/oswald2.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }

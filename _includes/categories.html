@@ -1,21 +1,14 @@
-<section id='categories'>
+<section id="categories">
 
   <div id="sidebar">TOPICS</div>
 
   <ul>
     {% for category in site.categories %}
       <li>
-        <span class= 'vignette-colors'>&gt;</span>
+        <span class= "vignette-colors">&gt;</span>
         <a href="#">{{ category[0] }}</a>
       </li><br>
     {% endfor %}
-    <!-- <li><span class='vignette-colors'>></span>Rails Girls Summer of Code</li><a href=''> <br> -->
-    <!-- <li><span class= 'vignette-colors'>></span> JavaScript</li> <a href=''> <br>
-    <li><span class= 'vignette-colors'>></span> Ruby</li> <a href=''> <br>
-    <li><span class= 'vignette-colors'>></span> HTML</li> <a href=''> <br>
-    <li><span class= 'vignette-colors'>></span> CSS & SASS</li> <a href=''> <br>
-    <li><span class= 'vignette-colors'>></span> Markdown</li> <a href=''> <br>
-    <li><span class= 'vignette-colors'>></span> Learning Process</li> <a href=''> -->
   </ul>
 
 
