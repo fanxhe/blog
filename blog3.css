@@ -42,6 +42,12 @@ div#cover{
 	position:absolute;
 }
 
+div#position{
+		top:406px;
+		position:relative;
+
+}
+
 h1#fanxhe{
 	width: 400px;
 	margin: 0 auto;
@@ -50,8 +56,6 @@ h1#fanxhe{
 	font-size:50px;
 	color:white;
 	text-align:center;
-	position:relative;
-	top:406px;
 }
 
 	span#f{
@@ -86,9 +90,6 @@ span.mayor{
 
 }
 
-#description a{
-	color:black;
-}
 
 /*BLOQUE2*/
 
@@ -201,7 +202,7 @@ li.menu_about a{
 
 li.fanny{
 	margin-left: -30px;
-} 
+}
 
 
 a.hover_about,a.hover_about:visited{
@@ -439,7 +440,8 @@ div.rectangulo2{
 
 /*ENLACES DE AVATARS EN LA SECCION ABOUT*/
 
-span.logo-inline {
+span.logo-inline a{
+		color:black;
 		margin:20px;
 		z-index:9999;
 }
