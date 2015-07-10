@@ -1,0 +1,31 @@
+
+Tipos de letras
+===============
+
+```
+@font-example  40px 'Shadows Into Light', cursive:
+
+        Esta es una letra: 40px 'Shadows Into Light', cursive.
+```
+
+```
+@font-example 20px 'Oswald':
+
+        Esta es una letra 'Oswald' de tamaño de 20px
+
+```
+
+```
+<h2 id= "description" class= "nombres">
+  <p><span class="mayor">Welcome to our Livig Stile Guide, </span></p>
+  <p> We're participating in Rails Girls Summer of code  2015</p>
+  <p>,during this summer we'll be working  in the open source project Living Style Guide. </p>
+
+</h2>
+
+```
+
+```
+<span class="logo-inline"><a href="http://railsgirls.com/">Rails Girls,<img src= "rg.png"></a></span>
+
+```

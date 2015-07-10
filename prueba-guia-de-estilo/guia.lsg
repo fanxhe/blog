@@ -1,5 +1,7 @@
 @css ../blog3.css
 
-@title Titulos y letras en home.
+@title Titulos y letras en home
 
-@import partials/ej_lsg.lsg
+@import archivos_import_a_lsg/ej_lsg.lsg
+
+@import archivos_import_a_lsg/header.lsg

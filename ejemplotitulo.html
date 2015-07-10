@@ -4,13 +4,41 @@
 <meta charset="utf-8">
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <meta content="The LivingStyleGuide Gem – http://livingstyleguide.org" name="generator">
-<title>Titulos y letras en home.</title>
+<title>Titulos y letras en home</title>
 <script>
 // see: http://www.hagenburger.net/BLOG/Simple-HTML5-Fix-for-IE.html
 for(var e,l='article aside footer header nav section time picture'.split(' ');e=l.pop();document.createElement(e));
 </script>
 <style>
 @import url(prueba-guia-de-estilo/../blog3.css);
+#prueba-guia-de-estilo\/archivos_import_a_lsg\/header div.my-header {
+  background-color: #8FE5E5;
+  width: 100%;
+  height: 500px;
+  padding: 50px 0px; }
+#prueba-guia-de-estilo\/archivos_import_a_lsg\/header .my-header h1, #prueba-guia-de-estilo\/archivos_import_a_lsg\/header h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 80px;
+  color: white;
+  text-align: center; }
+#prueba-guia-de-estilo\/archivos_import_a_lsg\/header h2.fanxhe {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #0D1B1B;
+  font-size: 50px; }
+#prueba-guia-de-estilo\/archivos_import_a_lsg\/header span#f {
+  font-size: 105px;
+  color: #189CCB; }
+#prueba-guia-de-estilo\/archivos_import_a_lsg\/header span#x {
+  font-size: 80px;
+  color: #189CCB; }
+#prueba-guia-de-estilo\/archivos_import_a_lsg\/header span#t {
+  font-size: 100px;
+  color: #189CCB; }
+#prueba-guia-de-estilo\/archivos_import_a_lsg\/header h2#tipos-de-letras {
+  font-size: 20px;
+  font-family: 'Oswald';
+  color: black; }
 .livingstyleguide, .livingstyleguide--container, .livingstyleguide--footer, .livingstyleguide--logo, .livingstyleguide--paragraph,
 .livingstyleguide--code-block,
 .livingstyleguide--unordered-list,
@@ -321,36 +349,39 @@ for(var e,l='article aside footer header nav section time picture'.split(' ');e=
 </style>
 </head>
 <body class="livingstyleguide">
+      <div class="my-header">
+         <h1>Our Living Style Guide</h1>
+         <h2 class="my-header fanxhe"><span id="f">f</span>an<span id="x">x</span>he <span id="t">T</span>eam</h2>
+      </div>
 <div class="livingstyleguide--container">
 <div>
-<section id="prueba-guia-de-estilo/partials/ej_lsg">
-    <h2 class="livingstyleguide--headline" id=""><a class="livingstyleguide--anchor" href="#"></a></h2>
-  <h2 class="livingstyleguide--headline" id="colors"><a class="livingstyleguide--anchor" href="#colors"></a>COLORS</h2>
-  <section class="livingstyleguide--example livingstyleguide--html-example" id="section-f5bd68">
+<section id="prueba-guia-de-estilo/archivos_import_a_lsg/ej_lsg">
+    <h2 class="livingstyleguide--headline" id="tipos-de-letras"><a class="livingstyleguide--anchor" href="#tipos-de-letras"></a>Tipos de letras</h2>
+  <section class="livingstyleguide--example livingstyleguide--html-example" id="section-8d3494">
     <div class="livingstyleguide--html">
-      <div id='home'></div>
+      <div class="livingstyleguide--font-example" style="font: 40px &#39;Shadows Into Light&#39;, cursive">
+    Esta es una letra: 40px &#39;Shadows Into Light&#39;, cursive.
+  </div>
     </div>
-    <pre class="livingstyleguide--code-block"><code class="livingstyleguide--code">&lt;div id=&#39;home&#39;&gt;<b>&lt;/<em>div</em>&gt;</b></code></pre>
+    <pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><b>&lt;<em>div</em></b> <b>class</b>=&quot;livingstyleguide--font-example&quot; <b>style</b>=&quot;font: 40px &amp;#39;Shadows Into Light&amp;#39;, cursive&quot;<b>&gt;</b><br>  Esta es una letra: 40px &amp;#39;Shadows Into Light&amp;#39;, cursive.<br><b>&lt;/<em>div</em>&gt;</b></code></pre>
   </section>
-  <h2 class="livingstyleguide--headline" id=""><a class="livingstyleguide--anchor" href="#"></a></h2>
-  <h2 class="livingstyleguide--headline" id="titulo-principal"><a class="livingstyleguide--anchor" href="#titulo-principal"></a>Titulo principal</h2>
-  <section class="livingstyleguide--example livingstyleguide--html-example" id="section-8cabe5">
+  <section class="livingstyleguide--example livingstyleguide--html-example" id="section-86caf3">
     <div class="livingstyleguide--html">
-      <h1 id="fanxhe"><span id="f">f</span>an<span id="x">x</span>he <span id="t">T</span>eam</h1>
+      <div class="livingstyleguide--font-example" style="font: 20px &#39;Oswald&#39;">
+    Esta es una letra &#39;Oswald&#39; de tamaño de 20px
+  </div>
     </div>
-    <pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><b>&lt;<em>h1</em></b> <b>id</b>=&quot;fanxhe&quot;<b>&gt;</b><b>&lt;<em>span</em></b> <b>id</b>=&quot;f&quot;<b>&gt;</b>f<b>&lt;/<em>span</em>&gt;</b>an<b>&lt;<em>span</em></b> <b>id</b>=&quot;x&quot;<b>&gt;</b>x<b>&lt;/<em>span</em>&gt;</b>he <b>&lt;<em>span</em></b> <b>id</b>=&quot;t&quot;<b>&gt;</b>T<b>&lt;/<em>span</em>&gt;</b>eam<b>&lt;/<em>h1</em>&gt;</b></code></pre>
+    <pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><b>&lt;<em>div</em></b> <b>class</b>=&quot;livingstyleguide--font-example&quot; <b>style</b>=&quot;font: 20px &amp;#39;Oswald&amp;#39;&quot;<b>&gt;</b><br>  Esta es una letra &amp;#39;Oswald&amp;#39; de tamaño de 20px<br><b>&lt;/<em>div</em>&gt;</b></code></pre>
   </section>
-  <section class="livingstyleguide--example livingstyleguide--html-example" id="section-8f0e38">
+  <section class="livingstyleguide--example livingstyleguide--html-example" id="section-d0e8ab">
     <div class="livingstyleguide--html">
       <h2 id= "description" class= "nombres">
-    <p><span class="mayor">Welcome to our blog, </span></p>
+    <p><span class="mayor">Welcome to our Livig Stile Guide, </span></p>
     <p> We're participating in Rails Girls Summer of code  2015</p>
     <p>,during this summer we'll be working  in the open source project Living Style Guide. </p>
-    <p>Thanks<span class="mayor"></span></p>
-    <p><span class="mayor">Great things are expecting for us this summer</span></p>
   </h2>
     </div>
-    <pre class="livingstyleguide--code-block"><code class="livingstyleguide--code">&lt;h2 id= &quot;description&quot; class= &quot;nombres&quot;&gt;<br>  <b>&lt;<em>p</em></b><b>&gt;</b><b>&lt;<em>span</em></b> <b>class</b>=&quot;mayor&quot;<b>&gt;</b>Welcome to our blog, <b>&lt;/<em>span</em>&gt;</b><b>&lt;/<em>p</em>&gt;</b><br>  <b>&lt;<em>p</em></b><b>&gt;</b> We&#39;re participating in Rails Girls Summer of code  2015<b>&lt;/<em>p</em>&gt;</b><br>  <b>&lt;<em>p</em></b><b>&gt;</b>,during this summer we&#39;ll be working  in the open source project Living Style Guide. <b>&lt;/<em>p</em>&gt;</b><br>  <b>&lt;<em>p</em></b><b>&gt;</b>Thanks<b>&lt;<em>span</em></b> <b>class</b>=&quot;mayor&quot;<b>&gt;</b><b>&lt;/<em>span</em>&gt;</b><b>&lt;/<em>p</em>&gt;</b><br>  <b>&lt;<em>p</em></b><b>&gt;</b><b>&lt;<em>span</em></b> <b>class</b>=&quot;mayor&quot;<b>&gt;</b>Great things are expecting for us this summer<b>&lt;/<em>span</em>&gt;</b><b>&lt;/<em>p</em>&gt;</b><br><b>&lt;/<em>h2</em>&gt;</b></code></pre>
+    <pre class="livingstyleguide--code-block"><code class="livingstyleguide--code">&lt;h2 id= &quot;description&quot; class= &quot;nombres&quot;&gt;<br>  <b>&lt;<em>p</em></b><b>&gt;</b><b>&lt;<em>span</em></b> <b>class</b>=&quot;mayor&quot;<b>&gt;</b>Welcome to our Livig Stile Guide, <b>&lt;/<em>span</em>&gt;</b><b>&lt;/<em>p</em>&gt;</b><br>  <b>&lt;<em>p</em></b><b>&gt;</b> We&#39;re participating in Rails Girls Summer of code  2015<b>&lt;/<em>p</em>&gt;</b><br>  <b>&lt;<em>p</em></b><b>&gt;</b>,during this summer we&#39;ll be working  in the open source project Living Style Guide. <b>&lt;/<em>p</em>&gt;</b><br><br><b>&lt;/<em>h2</em>&gt;</b></code></pre>
   </section>
   <section class="livingstyleguide--example livingstyleguide--html-example" id="section-a8d826">
     <div class="livingstyleguide--html">
@@ -358,6 +389,12 @@ for(var e,l='article aside footer header nav section time picture'.split(' ');e=
     </div>
     <pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><b>&lt;<em>span</em></b> <b>class</b>=&quot;logo-inline&quot;<b>&gt;</b><b>&lt;<em>a</em></b> <b>href</b>=&quot;http://railsgirls.com/&quot;<b>&gt;</b>Rails Girls,&lt;img src= &quot;rg.png&quot;&gt;<b>&lt;/<em>a</em>&gt;</b><b>&lt;/<em>span</em>&gt;</b></code></pre>
   </section>
+  </section>
+  
+</div>
+<div>
+<section id="prueba-guia-de-estilo/archivos_import_a_lsg/header">
+    
   </section>
   
 </div>
