@@ -29,3 +29,46 @@ Tipos de letras
 <span class="logo-inline"><a href="http://railsgirls.com/">Rails Girls,<img src= "rg.png"></a></span>
 
 ```
+
+@header:
+       <div class="my-header">
+         <h1>Our Living Style Guide</h1>
+         <h2 class="my-header fanxhe"><span id="f">f</span>an<span id="x">x</span>he <span id="t">T</span>eam</h1>
+       </div>
+
+@css:
+    div.my-header{
+      background-color:#8FE5E5;
+      width:100%;
+      height:500px;
+      padding:50px 0px;
+      }
+    .my-header h1, h2{
+      font-family:'Shadows Into Light', cursive;
+      font-size:80px;
+      color:white;
+      text-align:center;
+    }
+    h2.fanxhe{
+      width: 400px;
+      margin: 0 auto;
+      background-color:#0D1B1B;
+      font-size:50px;
+    }
+    span#f{
+      font-size: 105px;
+      color:#189CCB;
+    }
+    span#x{
+      font-size:80px;
+      color:#189CCB;
+    }
+    span#t{
+      font-size: 100px;
+      color:#189CCB;
+    }
+    h2#tipos-de-letras{
+      font-size:20px;
+      font-family:'Oswald';
+      color:black;
+    }
