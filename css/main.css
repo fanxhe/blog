@@ -236,9 +236,9 @@ div#estudiantes{
 }
 
 .center{
-	display:flex;
-	justify-content:space-around;
-	flex-wrap:wrap;
+	display:-webkit-flex;
+	-webkit-justify-content:space-around;
+	-webkit-flex-wrap:wrap;
 }
 
 .half-block{
@@ -249,7 +249,6 @@ div#estudiantes{
 .block{
 	min-width:141px;
 	min-height:185px;
-	flex-shrink:5;
 }
 
 .logos img{
@@ -270,8 +269,8 @@ div#estudiantes{
 
 div#coachcompany{
 	text-align:center;
-	display:flex;
-	justify-content:center;
+	display:-webkit-flex;
+	-webkit-justify-content:center;
 }
 .block-crowd{
 	min-width: 266px;
