@@ -2,7 +2,7 @@ use Rack::Auth::Basic, "Restricted" do |username, password|
   [username, password] == [ENV["USERNAME"], ENV["PASSWORD"]]
 end if ENV["TEST"]
 
-use Rack::Static, urls: ["/"], root: ".", index: "_site/index.html"
+use Rack::Static, urls: [""], root: "_site", index: "index.html"
 
 run lambda { |env|
   [
