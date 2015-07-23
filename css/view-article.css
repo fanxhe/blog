@@ -150,34 +150,41 @@ ul,li{
  }
 
  .post{
- 	color: #000;
+ 	color: #FFF;
 	font-family: 'Alegreya Sans', sans-serif;
  	font-size: 20px;
- 	font-weight: normal;
+ 	font-weight: bold;
  	line-height: 2em;
  	text-align: left;
  }
 
 /*css lista de articulo */
 
+#padre{
+	opacity: 0.9;
+	position:relative;
+
+}
 #cover{
-	/*background: -webkit-linear-gradient(top, azure, aliceblue, lightcyan, lightblue, paleturquoise, mediumturquoise, turquoise, lightskyblue);*/
+	background-image:   radial-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.5)
+    ),url("macblog.jpg");
 	background-size:100% 100%;
 	position:relative;
 	display:block;
-	opacity:0.2;
 	width:100%;
 	top: 50px;
 
 }
 
 #header{
-
-  position:absolute;
 	display:block;
-	width:80%;
 	height:100px;
+	position:absolute;
+	opacity: 0.7;
 	top:50px;
+	width:80%;
 }
 
 /*#bloque{
@@ -188,16 +195,18 @@ ul,li{
 }*/
 
 #text{
-		margin-left: 103px;
+		margin-left: 130px;
 }
 
 .section-resume{
 	height:400px;
+	width: 80%;
 }
 
 #title-header{
+	color: #FFF;
+	text-decoration: underline;
 	top:80px;
-	color: #189CCB;
 }
 
 .title-article{
