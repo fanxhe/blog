@@ -218,9 +218,15 @@ a.hover_about:hover{
 /*Bloque2, flex pagina */
 
 div#estudiantes{
-	display:flex;
-	justify-content:center;
-	/*min-height:30%;*/
+	display:-webkit-flex;
+	display:-moz-flex;
+  display:-ms-flexbox;
+  display:flex;
+	-webkit-justify-content: center;
+	-moz-justify-content:center;
+	-ms-justify-content:center;
+	justify-content: center
+
 }
 #estudiantes img{
 	padding: 15px;
@@ -237,8 +243,18 @@ div#estudiantes{
 
 .center{
 	display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flexbox;
+	display:flex;
 	-webkit-justify-content:space-around;
+	-moz-justify-content:space-around;
+	-ms-justify-content:space-around;
+	justify-content:space-around;
 	-webkit-flex-wrap:wrap;
+	-moz-flex-wrap:wrap;
+	-ms-wrap:wrap;
+	flex-wrap:wrap;
+
 }
 
 .half-block{
@@ -268,9 +284,15 @@ div#estudiantes{
 
 
 div#coachcompany{
-	text-align:center;
-	display:-webkit-flex;
-	-webkit-justify-content:center;
+	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+  justify-content: center;
 }
 .block-crowd{
 	min-width: 266px;
@@ -300,29 +322,29 @@ nav#contenido ul {
 }
 
 ul,li{
-	list-style-type:none;
+	list-style-type: none;
 	display: inline-block;
-	padding:0px;
+	padding: 0px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 .menu a, .menu a:visited{
-		background-color:#0D1B1B;
-    text-align:center;
-    text-decoration:none;
+		background-color: #0D1B1B;
+    text-align: center;
+    text-decoration: none;
     font-size: 20px;
     font-family: 'Architects Daughter', cursive;
     color: white;
-    padding:10px;
-    margin:10px;
+    padding: 10px;
+    margin: 10px;
 }
 
 /*Efectos del menú*/
 .menu a:hover{
-     position:relative;
-     top:-5px;
-     color:#46A1B6;
+     position: relative;
+     top: -5px;
+     color: #46A1B6;
      font-size: 22px;
      opacity: 1;
      text-shadow: 0px 0px 13px #fff;
@@ -421,32 +443,32 @@ div#fondo_about6{
 }
 
 div.rectangulo{
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
 	opacity: 0;
 	background:url(../img/rectangulo.png) no-repeat;
-	background-size:100% 100%;
+	background-size: 100% 100%;
   position:relative;
 }
 
 div.rectangulo1{
-	background-position:-1000px 50%;
+	background-position: -1000px 50%;
 }
 div.rectangulo2{
-	background-position:1000px 50%;
+	background-position: 1000px 50%;
 }
 
 /*ENLACES DE AVATARS EN LA SECCION ABOUT*/
 
 span.logo-inline {
-		margin:20px;
-		z-index:9999;
+	margin: 20px;
+	z-index: 9999;
 }
 
 span.logo-inline img{
-	width:30px;
-	height:30px;
-	border-radius:50%;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
 
 }
 
@@ -456,8 +478,8 @@ span.logo-inline:hover img{
 }
 
 .fp-slidesNav{
-	top:20% !important;
-	left:80% !important;
+	top: 20% !important;
+	left: 80% !important;
 }
 
 
@@ -466,22 +488,22 @@ span.logo-inline:hover img{
 
 div.about_project{
 	opacity: 0;
-	width:700px;
-	display:block;
-	position:absolute;
-	top:240px;
-	margin-left:20%;
+	width: 700px;
+	display: block;
+	position: absolute;
+	top: 240px;
+	margin-left: 20%;
 }
 
 div h1.titulo_about, div p.titulo_about{
-	font-family:'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size: 25px;
 }
 
 div p.contenido_about{
 	text-align: center;
 	font-size: 20px;
-	line-height:40px;
+	line-height: 40px;
 }
 
 footer{
@@ -498,7 +520,7 @@ footer{
 }
 
 @font-face {
-  font-family:'Shadows Into Light';
+  font-family: 'Shadows Into Light';
   font-style: normal;
   font-weight: 400;
   src: local('Shadows Into Light'), local('ShadowsIntoLight'),url(../fonts/shadows.woff2) format('woff2');
