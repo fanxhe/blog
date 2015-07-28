@@ -81,26 +81,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-
-
 /**
  * Links
  */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+a, a:visited {
+  color: #189CCB;
+  text-decoration: none;
 }
 
-
+a:hover{
+	color: #8FE5E5;
+}
 
 /**
  * Blockquotes

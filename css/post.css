@@ -165,6 +165,9 @@ nav#contenido ul {
 	 display: block;
  }
 
+ #post hr {
+	 color: #BF04A4;
+ }
 /*Categorías*/
  #categories{
  	top:  30%;
