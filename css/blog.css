@@ -163,7 +163,7 @@ ul,li{
 #padre{
 	opacity: 0.9;
 	position:relative;
-
+	top: 50px;
 }
 #cover{
 	background-image:   radial-gradient(
@@ -174,8 +174,6 @@ ul,li{
 	position:relative;
 	display:block;
 	width:100%;
-	top: 50px;
-
 }
 
 #header{
@@ -221,10 +219,13 @@ hr{
 }
 
 .list{
-	margin-left: 103px;
-	margin-top:100px;
-	width: 800px;
-	border-bottom-color:shadow(lightskyblue);
+	border-bottom-color: shadow(lightskyblue);
+	float: left;
+	margin-left: 5%;
+	margin-top: 50px;
+	position: relative;
+	top: 50px;
+	width: 60%;
 }
 
 .article-details{
@@ -243,11 +244,11 @@ a:hover{
 /*Categorías*/
 
  .categories{
- 	bottom: 610px;
  	float: right;
  	height: 200px;
- 	position: relative;
+ 	position: absolute;
  	right: 70px;
+	top: 55%;
  	width: 250px;
 }
 
@@ -299,15 +300,15 @@ span.vignette-colors{
  	z-index: 1;
  }
 
-footer{
+footer {
  	background-color: #0D1B1B;
- 	bottom: 1px;
+	bottom: 0;
  	color: #FFF;
- 	text-decoration: none;
- 	font-family: 'Architects Daughter', cursive;
+	font-family: 'Architects Daughter', cursive;
  	font-size: 12px;
- 	height: 30px;
- 	padding: 2px;
- 	position: relative;
- 	top:280px;
- }
+	height: 30px;
+	padding: 2px;
+ 	position: fixed;
+ 	text-decoration: none;
+	width: 100%;
+}

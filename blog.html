@@ -15,98 +15,38 @@
 		 		<div id= "cover" class="section-resume"></div>
 
 				<header id= "header" class= "section-resume">
-						<h1 class= "title" id="title-header">Titulo del ultimo post</h1>
-						<p class= "post" id ="text"> Pa tain patan tapa jhvdjkhfjdhfjbdbfvjdbjkvfhsfnc,scklsjkfnskjfkskdmskcksjcds,dmsmdls
-						ksfjkshfjsdhjfbdsjbcjbdjkfhskfmsbvjbdxv bdnfjkdhjvbd,
-						dsghdfgsjhfchjsvcfhjvshjcvhjsghcghsjvcf
-						bcsudvfhdsvfdscsjgdfjsgfjhgsjhfg
-						hjvdbvjhbdjhvghjdbvhjdjkfhjkdhfjhhfbdjvbhjdsghfjdhskjfhsdbfmnvbdmnvbjdsghfjh	</p>
+						<h1 class= "title" id="title-header">
+							{% assign first_post = site.posts.first %}
+							<a href="{{ first_post.url }}">{{ first_post.title }}</a>
+							<br>
+							<br>
+							{{ first_post.date | date: "%-d/%B/%Y" }}
+						</h1>
+						<p class="post" id="text">{{ first_post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 				</header>
 		</div>
  		<section class= "list">
-			<div class = "title title-article">
-
-				<h3> <span class= "article-details"> &gt;</span><a class="link.article" href ="#"> Articulo javascript</a> <span class = "article-details">[02/Julio/2015]</span></h3>
-
-			</div>
-
-			<hr>
-
-			<div class = "title title-article">
-
-				<h3> <span class= "article-details"> &gt;</span> Articulo javascript <span class = "article-details">[02/Julio/2015]</span></h3>
-
-
-			</div>
-
-			<hr>
-
-			<div class = "title title-article">
-
-				<h3> <span class= "article-details"> &gt;</span> Articulo javascript <span class = "article-details">[02/Julio/2015]</span></h3>
-
-			</div>
-
-			<hr>
-
-			<div class = "title title-article">
-
-				<h3> <span class= "article-details"> &gt;</span> Articulo javascript <span class = "article-details">[02/Julio/2015]</span></h3>
-
-			</div>
-
-			<hr>
-
-			<div class = "title title-article">
-
-				<h3> <span class= "article-details"> &gt;</span> Articulo javascript <span class = "article-details">[02/Julio/2015]</span></h3>
-
-			</div>
-
-
+			{% for post in site.posts %}
+				{% if post != first_post %}
+					<div class = "title title-article">
+						<h3>
+							<span class= "article-details"> &gt;</span>
+							<a class="link.article" href ="#"> {{ post.title }}</a>
+							<span class = "article-details">[{{ post.date | date: "%-d/%B/%Y" }}]</span>
+						</h3>
+					</div>
+					<hr>
+				{% endif %}
+			{% endfor %}
  		</section>
 
 		{% include categories.html %}
-
-
- 		<!--<section class="archive-pages">
-
-  				<ul>
-
-				      <li class="first"><a href="#" title="first page">first page</a></li>
-
-				      <li class="previous"><a href="#" title="previous page">previous page</a></li>
-
-				      <li class="selected">1</li>
-
-				      <li class="next"><a href="#" title="next page">next page</a></li>
-
-				      <li class="last"><a href="#" title="last page">last page</a></li>
-
- 					 </ul>
-		</section>-->
 
  		<!-- <section id="Comments">
 
  			<div id="comments-area"></div>
 
  		</section> -->
-
-		<div id="Array">
-		 		<pre><code>
-		 			var students = ["Fany", "Anxhe"];<br>
-					var coaches = ["Tapia", "Nacho"];<br>
-					var crowdContact = "Vic";<br>
-					var coachCompany ="Crowd Interactive";<br>
-					var supervisor = "Katrin";<br>
-					var livingStyleGuide = ["Haguenburger", "Jen"];<br>
-
-					fanxheTeam = [students, coaches,crowdContact, coachCompany, supervisor, mentor, livingStyleGuide];<br>
-						console.log('We are the FanxheTeam: ' + fanxheTeam + 'We participating in Rails Girls Summer of COde 2015.');<br>
-							We are the FanxheTeam: Fany, Anxhe, Tapia, Nacho, Vic, Crowd Interactive, Katrin, Haguenburguer.<br>
-							We participating in Rails Girls Summer of Code 2015.
-				</code></pre>
-		</div>
 
 		{% include footer.html %}
 
