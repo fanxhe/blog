@@ -74,6 +74,3 @@ DEPENDENCIES
   foreman (= 0.78.0)
   jekyll (= 2.5.3)
   rack (= 1.6.4)
-
-BUNDLED WITH
-   1.10.5
