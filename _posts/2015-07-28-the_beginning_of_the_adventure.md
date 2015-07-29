@@ -27,7 +27,7 @@ The indispensable requisites to install this gem:
 * Ruby ~> 2.0.0.
 * Bundler.
 
-In our case we configured a `Gemfile`, where we included the Living Style Guide's gem as shown below:
+In our case we configured a `Gemfile`, in which we included the Living Style Guide's gem as shown below:
 
 {% highlight ruby %}
 gem "livingstyleguide",   "v2.0.0.alpha.8"
@@ -46,11 +46,11 @@ Subsequently, we executed  `$ bundle install` in the console to install the gems
 
 ##  How did we make our .lsg files?
 
-In the first of files we included the examples that we want to show in our style guide, we will call it  partials/test.lsg. In it we used the `@colors` filter to show the colors used in our blog:
+In the first file we included the examples that we want to show in our style guide, we will call it  partials/test.lsg. In it we used the `@colors` filter to show the colors used in our blog:
 
 ![](https://www.evernote.com/l/AnfZ48xrNc5Iro9-IY6fVD9sIvCEM0YpE3sB/image.png)
 
-In the second of file, we imported the file that we mentioned above using the `@import` filter and required all the necessary CSS files to generate our style guide using the `@css` filter:
+In the second file, we imported the file that we mentioned above using the `@import` filter and required all the necessary CSS files to generate our style guide using the `@css` filter:
 
 ![](https://www.evernote.com/l/And91K9031hABLP3oi8OnBZmoaoiC-i1-lIB/image.png)
 
