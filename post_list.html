@@ -1,5 +1,6 @@
 ---
 ---
+
 <!doctype html>
 <html>
 	<head>
@@ -13,13 +14,8 @@
 		{% include menu.html %}
 
 		<header class= "header--resumen" >
-				<h1 class= "title" id="title-header">
 				<span class= "logo--fanxhe"><img src = "../img/logo-completo.png"/></span>
-				{% assign first_post = site.posts.first %}<a href="{{ first_post.url }}">{{ first_post.title }}</a>
-				<span class ="article-details">[{{ first_post.date | date: "%-d/%B/%Y" }}]</span>
-				</h1>
 				<p class="post" id="text">{{ first_post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-				<hr class="color-hr">
 		</header>
 
  		<section class= "list">
