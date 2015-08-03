@@ -1,18 +1,42 @@
-// Jekyll
+@import "colors";
 
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+html, body {
+	background: transparent;
+	height: auto;
+  margin: 0;
+	width: auto;
+}
+
+// Lists
+
+ul, li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+// Links
+
+a, a:visited {
+    color: $curious-blue;
+		text-decoration: none;
+}
+
+a:hover{
+	color: $riptide;
 }
 
 
 // Code formatting
 
 pre, code {
-  font-size: 15px;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: black;
   color: white;
+	font-size: 15px;
 }
 
 code {
@@ -20,12 +44,19 @@ code {
 }
 
 pre {
+	overflow-x: scroll;
   padding: 8px 12px;
-  overflow-x: scroll;
 
   > code {
     border: 0;
+		padding-left: 0;
     padding-right: 0;
-    padding-left: 0;
+
   }
+}
+
+// Jekyll
+
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
 }
