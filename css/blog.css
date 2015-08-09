@@ -160,35 +160,24 @@ ul,li{
 /*css lista de articulo */
 
 .header--resumen{
+	align-items: center;
+	display:flex;
 	height: 30%;
+	padding-top: 50px;
 	width: 80%;
-	margin: 50px 0px 0px 0px;
-
 }
-
-.logo--fanxhe img{
-	height: 200px;
-	width: 500px;
-	padding-right: 15%;
-}
-
 
 .color-hr{
 	border-style: solid;
 	color:#D73B89;
-	width: 100%;
-}
-
-
-#text{
-	margin-left: 130px;
+	width: 80%;
+	float: left;
 }
 
 
 #title-header{
 	color: #000;
 	text-decoration: none;
-	top: 80px;
 }
 
 .title-article{
@@ -208,7 +197,6 @@ hr{
 	margin-left: 5%;
 	margin-top: 50px;
 	position: relative;
-	top: 50px;
 	width: 60%;
 }
 
