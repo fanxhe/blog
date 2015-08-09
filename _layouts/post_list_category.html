@@ -11,23 +11,17 @@
 	</head>
 	<body>
 		{% include menu.html %}
-
-		<header class= "header--resumen" >
-			  <img class="logo--fanxhe" src="/img/sticker-logo.png"/>
-				<div class="header--last-post">
-					<h1 class="title" id="title-header">
-						{% assign last_post = site.posts.first %}
-						<a href="{{ first_post.url }}">{{ last_post.title }}</a>
-						<span class ="article-details">[{{ last_post.date | date: "%-d/%B/%Y" }}]</span>
-					</h1>
-					<p class="post" id="text">{{ last_post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-				</div>
-
+		<header class="header--resumen" >
+			<img class="logo--fanxhe" src="/img/sticker-logo.png"/>
+			<div class="header--last-post">
+				<h1 class="title" id="title-header">
+					{{ page.category }}
+				</h1>
+			</div>
 		</header>
-		<hr class="color-hr">
+
  		<section class= "list">
-			{% for post in site.posts %}
-				{% if post != last_post %}
+			{% for post in site.categories[page.category] %}
 					<div class = "title title-article">
 						<h3>
 							<span class= "article-details"> &gt;</span>
@@ -35,8 +29,8 @@
 							<span class = "article-details">[{{ post.date | date: "%-d/%B/%Y" }}]</span>
 						</h3>
 					</div>
+					<p class="post" id="text">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 					<hr>
-				{% endif %}
 			{% endfor %}
  		</section>
 
