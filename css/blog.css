@@ -160,11 +160,21 @@ ul,li{
 /*css lista de articulo */
 
 .header--resumen{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-alingn-items: center;
 	align-items: center;
-	display:flex;
 	height: 30%;
 	padding-top: 50px;
 	width: 80%;
+}
+
+.logo--fanxhe{
+	width: 300px;
 }
 
 .color-hr{
