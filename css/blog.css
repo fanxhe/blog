@@ -207,7 +207,7 @@ hr{
 	margin-left: 5%;
 	margin-top: 50px;
 	position: relative;
-	width: 60%;
+	width: 70%;
 }
 
 .article-details{
@@ -232,7 +232,6 @@ a:hover{
 	left: 83%;
  	position: absolute;
 	/*top: 60%;*/
- 	width: 20%;
 }
 
 
