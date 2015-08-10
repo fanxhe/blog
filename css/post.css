@@ -223,7 +223,6 @@ span.vignette-colors{
  	font-size: 8px;
  	font-weight: bold;
  	line-height: 0.9em;
- 	margin-right: -180px;
  	margin-top: 70px;
  	opacity: 0.7;
  	position: relative;
@@ -242,4 +241,5 @@ footer {
  	position: fixed;
  	text-decoration: none;
 	width: 100%;
+	z-index: 9999;
 }
