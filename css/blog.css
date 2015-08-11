@@ -206,6 +206,7 @@ hr{
 	float: left;
 	margin-left: 5%;
 	margin-top: 50px;
+	padding-bottom: 100px;
 	position: relative;
 	width: 70%;
 }
@@ -254,16 +255,23 @@ a:hover{
  	font-weight: bold;
  	text-align: left;
  }
-span.vignette-colors{
+
+span.vignette-colors {
 	color: #009BCD;
 }
- .categories li:hover{
- 	color: #FFF;
- }
 
-.categories li a:visited{
- 	color: gray;
- }
+span.vignette-colors:hover {
+ 	color: #FFF;
+	cursor: pointer;
+}
+
+.categories li a {
+	text-transform: capitalize;
+}
+
+.categories li a:visited {
+	color: gray;
+}
 
 /*Fondo inferior código*/
 #Array{
