@@ -11,27 +11,27 @@
 	</head>
 	<body>
 		{% include menu.html %}
-		<div id= "padre">
-		 		<div id= "cover" class="section-resume"></div>
 
-				<header id= "header" class= "section-resume">
-						<h1 class= "title" id="title-header">
-							{% assign first_post = site.posts.first %}
-							<a href="{{ first_post.url }}">{{ first_post.title }}</a>
-							<br>
-							<br>
-							{{ first_post.date | date: "%-d/%B/%Y" }}
-						</h1>
-						<p class="post" id="text">{{ first_post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-				</header>
-		</div>
+		<header class= "header--resumen" >
+			  <img class="logo--fanxhe" src="../img/sticker-logo.png"/>
+				<div class="header--last-post">
+					<h1 class= "title" id="title-header">
+						{% assign last_post = site.posts.first %}
+						<a href="{{ first_post.url }}">{{ last_post.title }}</a>
+						<span class ="article-details">[{{ last_post.date | date: "%-d/%B/%Y" }}]</span>
+					</h1>
+					<p class="post" id="text">{{ last_post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+				</div>
+
+		</header>
+		<hr class="color-hr">
  		<section class= "list">
 			{% for post in site.posts %}
-				{% if post != first_post %}
+				{% if post != last_post %}
 					<div class = "title title-article">
 						<h3>
 							<span class= "article-details"> &gt;</span>
-							<a class="link.article" href ="#"> {{ post.title }}</a>
+							<a class="link.article" href ="{{ post.url }}"> {{ post.title }}</a>
 							<span class = "article-details">[{{ post.date | date: "%-d/%B/%Y" }}]</span>
 						</h3>
 					</div>
