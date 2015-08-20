@@ -1,0 +1,6 @@
+
+gem "livingstyleguide", path: "/Users/Anyelina/Documents/livingstyleguide"
+
+gem "coffee-script", "2.4.1"
+
+gem "sass", "3.4.16"

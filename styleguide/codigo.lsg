@@ -1,0 +1,43 @@
+@search-box
+
+@import partials/test
+
+@javascript-after transpiler: coffee-script
+  $ ->
+    $nav = $('<nav id="toc" class="lsg--toc"></nav>')
+
+    $.each $('.lsg--anchor'), (index, anchor) ->
+      $anchor = $ anchor
+      $navLink = $ "<a href=\"#{$anchor.attr('href')}\">#{$anchor.parent().text()}</a>"
+      $navLink.addClass "active" if index == 0
+      $nav.append $navLink
+
+    $('body').append $nav
+
+    $(window).on 'scroll', ->
+      scrollPosition = $(window).scrollTop()
+      $firstVisibleHeadlineAnchor = $('.lsg--anchor').filter ->
+        $(this).position().top >= scrollPosition
+
+      $("#toc .active").removeClass 'active'
+      $("#toc [href=#{$firstVisibleHeadlineAnchor.attr('href')}]").addClass 'active'
+
+
+
+@sass
+  @at-root
+    .lsg--toc
+      position: fixed
+      top: 20px
+      left: 0px
+      width: 200px
+
+      > a
+        display: block
+        padding: 2px 8px
+
+        &.active
+          font-weight: bold
+
+      @media only screen and (max-width: 840px)
+        display: none
