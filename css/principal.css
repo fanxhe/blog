@@ -129,7 +129,7 @@ h2.titulo{
 
 
 /*Menu lateral de estudiantes efectos circulos al lado de estudiantes*/
-
+/*
 div.circle_about_me{
 	opacity: 0;
 	width:100px;
@@ -180,7 +180,6 @@ div.circle_about_me:hover{
 	margin:53px -60px 0px 0px;
 }
 
-
 li.menu_about{
 	font-family:'Oswald', sans-serif;
 	display:list-item;
@@ -210,14 +209,14 @@ a.hover_about,a.hover_about:visited{
 	color:white;
 	text-shadow: -1px 1px 0 black;
 	/*color:#16DEB1;*/
-}
+/*}
 a.hover_about:hover{
 	color:#57003f;
-}
+}*/
 
 /*Bloque2, flex pagina */
 
-div#estudiantes{
+div.estudiantes{
 	display:-webkit-flex;
 	display:-moz-flex;
   display:-ms-flexbox;
@@ -228,7 +227,69 @@ div#estudiantes{
 	justify-content: center
 
 }
-#estudiantes img{
+
+.e_avatars{
+
+	width: 110px;
+	height: 110px;
+	margin: 15px;
+	border-radius:50%;
+	overflow: hidden;
+	box-shadow:
+		inset 0 0 0 10px rgba(255,255,255,0.6),
+					0 1px 2px rgba(0,0,0,0.1);
+		transition: all 0.4s ease-in-out;
+}
+
+
+.item {
+	background-image: url(/img/anyelina.jpg);
+}
+
+.item:hover{
+	box-shadow:
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+
+}
+
+.info{
+	background: rgba(63,147,147, 0.8);
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+/*.info a{
+	padding: 10px 5px;
+	margin: 0 30px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	transition: all 1s ease-in-out 0.4s
+}*/
+
+.enlaces img{
+		height: 32px;
+		width: 32px;
+		margin: 0 auto;
+		display:block;
+}
+
+.e_avatars:hover .info {
+	transform: scale(1);
+	opacity: 1;
+
+}
+
+.avatars_estudiantes img{
 	padding: 15px;
 	width: 110px;
 	height: 110px;
@@ -236,10 +297,12 @@ div#estudiantes{
 	margin: 0 auto;
 	display: block;
 }
-.estudiante{
+
+
+/*.estudiante{
 	min-width:192px;
 	z-index:1;
-}
+}*/
 
 .center{
 	display:-webkit-flex;
