@@ -3,14 +3,8 @@ $(function(){
 		$(window).scroll(function(){
 			var opacidad = ($(window).scrollTop() / 200)
 			$('#cover').css('opacity',opacidad);
-
-			if(($(window).scrollTop() > 500)&&($(window).scrollTop()<700)){
-					$('.circle_about_me').css('opacity',1);
-			}
-			else if($(window).scrollTop()<500) {
-					$('.circle_about_me').css('opacity',0);
-			}
 		});
+
 
 		var activarRectangulos = function(){
 			var section = $('div.active');
