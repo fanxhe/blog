@@ -1,0 +1,14 @@
+.logo-inline {
+  margin: 20px;
+  // z-index: 9999;
+
+  img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+
+  &:hover img {
+    box-shadow: 5px 5px 10px #999;
+  }
+}

@@ -1,0 +1,21 @@
+.description {
+  font-size: 25px;
+  margin-top: 420px;
+  margin-bottom: 120px;
+
+  a {
+    color: black;
+  }
+
+  p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 20px -1px 20px $pelorous;
+  }
+
+  span.mayor{
+    font-size: 30px;
+  }
+}

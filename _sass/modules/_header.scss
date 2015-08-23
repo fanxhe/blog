@@ -1,0 +1,43 @@
+.header, .cover {
+  display: block;
+  height: 500px;
+  position: absolute;
+  width: 100%;
+}
+
+.header {
+  background: url(../img/header.jpg) no-repeat fixed top center;
+  background-size: cover;
+}
+
+.cover {
+  background: url(../img/hdr.jpg) no-repeat fixed top center;
+  background-size: cover;
+  opacity: 0;
+}
+
+.main-title {
+  background-color: $aztec;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+
+  #f, #x, #t {
+    color: $curious-blue;
+  }
+
+  #f{
+    font-size: 105px;
+  }
+
+  #x{
+    font-size:80px;
+  }
+
+  #t{
+    font-size: 100px;
+  }
+}
