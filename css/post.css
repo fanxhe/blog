@@ -230,6 +230,11 @@ span.vignette-colors{
  	z-index: 1;
 }
 
+#disqus_thread {
+	margin: 7% 35% 5% 10%;
+
+}
+
 footer {
  	background-color: #0D1B1B;
 	bottom: 0;
