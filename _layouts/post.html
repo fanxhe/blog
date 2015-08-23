@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="/css/pagination.css">
     <link href="http://fonts.googleapis.com/css?family=Kotta+One|Alegreya+Sans|Source+Code+Pro|Courgette|Shadows+Into+Light+Two|Architects+Daughter" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+      stLight.options({publisher: "c4eb489a-78d3-4062-831a-d4f7c406b0df", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+    </script>
+
     <!--Implementa Google Analytics a nuestro blog-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -58,6 +63,12 @@
     </section>
 
     {% include categories.html %}
+    
+    <div class= 'share-post'>
+      <span class='st_facebook_hcount' displayText='Facebook'></span>
+      <span class='st_twitter_hcount' displayText='Tweet'></span>
+    </div>
+
     {% include disqus.html %}
 
     <div id="Array">
