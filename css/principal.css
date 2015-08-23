@@ -184,21 +184,29 @@ div.estudiantes{
 	opacity: 0;
 	transition: all 0.4s ease-in-out;
 	transform: scale(0);
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flexbox;
 	display:flex;
+	-webkit-justify-content: center;
+	-moz-justify-content:center;
+	-ms-justify-content:center;
 	justify-content: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
+
 }
 
 .link img{
 	height: 32px;
 	width: 32px;
-
 }
 
-.avatars_student:hover .cover_avatars{
+.avatars_student:hover .cover_avatars {
 	transform: scale(1);
 	opacity: 1;
-
 }
 
 
