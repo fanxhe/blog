@@ -5,8 +5,10 @@
   <ul>
     {% for category in site.categories %}
       <li>
-        <span class= "vignette-colors">&gt;</span>
-        <a href="#">{{ category[0] }}</a>
+        <a href="/categories/{{ category[0] }}.html">
+          <span class= "vignette-colors">&gt;</span>
+          {{ category[0]}}
+        </a>
       </li><br>
     {% endfor %}
   </ul>
