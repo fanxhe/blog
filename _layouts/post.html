@@ -3,7 +3,14 @@
   <head>
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" />
-    
+
+    <meta property="article:modified_time" content="{{page.date}}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:url"                content="http://code.fanxhe.com/{{page.url}}" />
+    <meta property="article:tag"           content="{{page.excerpt}}"/>
+    <meta property="og:title"              content="{{page.title}}" />
+    <meta property="og:image"              content="http://code.fanxhe.com/img/logo-completo.png" />
+
     <meta charset='utf-8'>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/post.css">
@@ -63,7 +70,7 @@
     </section>
 
     {% include categories.html %}
-    
+
     <div class= 'share-post'>
       <span class='st_facebook_hcount' displayText='Facebook'></span>
       <span class='st_twitter_hcount' displayText='Tweet'></span>
