@@ -112,6 +112,11 @@ nav#contenido ul {
   	background: #0D1B1B;
  }
 
+/* Share posts*/
+ .share-post {
+	 left: 10%;
+	 position: relative;
+ }
 /*Fondo superior código*/
  #article-view {
  	color: #7290D5;
