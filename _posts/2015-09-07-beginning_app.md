@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Beginning_app
-date:   2015-09-8 12:00:00
+date:   2015-09-7 12:00:00
 categories: daily-log-RGSoC
 ---
 Our week has started with a standup, in which we have done a summary of our progress from the last week.
